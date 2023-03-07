@@ -84,6 +84,7 @@ class CfgFaces
 		class hal_synth_face_01;
 		class Kerry;
 		class AfricanHead_01;
+		class AsianHead_A3_01;
 		class SSV_replika_face_01: hal_synth_face_01
 		{
 			scope=2;
@@ -141,6 +142,20 @@ class CfgFaces
 				"SSV_android_head_02"
 			};
 		};
+		class SSV_android_face_03: AsianHead_A3_01
+		{
+			scope=2;
+			author="EHS";
+			displayname="Android (Asian)";
+			disabled=0;
+			texture="SSV_Android_Common\textures\humanlike\asian\robots_become_human_co.paa";
+			material="SSV_Android_Common\textures\humanlike\asian\robots_become_human.rvmat";
+			head="SSV_android_head_03";
+			identityTypes[]=
+			{
+				"SSV_android_head_03"
+			};
+		};
 	};
 };
 
@@ -177,6 +192,7 @@ class CfgHeads
 	};
 	class KerryHead_A3;
 	class BlackHead_A3;
+	class AsianHead_A3;
 	class SSV_android_head_01: KerryHead_A3 
 	{
 		class Wounds
@@ -196,6 +212,17 @@ class CfgHeads
 			mat[]=
 			{
 				"SSV_Android_Common\textures\humanlike\black\robots_become_human.rvmat";
+			};
+		};
+	};
+	class SSV_android_head_03: AsianHead_A3 
+	{
+		class Wounds
+		{
+			tex[]={};
+			mat[]=
+			{
+				"SSV_Android_Common\textures\humanlike\asian\robots_become_human.rvmat";
 			};
 		};
 	};
@@ -235,6 +262,15 @@ class cfgIdentities
 		face = "SSV_android_face_02";
 		glasses = "None";
 		name = "Android - Black";
+		nameSound = "";
+		speaker = "Male02ENGVR";
+		pitch = 0.6;
+	};
+	class SSV_android_identity_3
+	{
+		face = "SSV_android_face_03";
+		glasses = "None";
+		name = "Android - Asian";
 		nameSound = "";
 		speaker = "Male02ENGVR";
 		pitch = 0.6;

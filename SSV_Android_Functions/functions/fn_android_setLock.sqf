@@ -4,14 +4,16 @@ if !(_unit getVariable ["ssv_isAndroid", false]) exitWith {};
 
 if (_state isEqualTo true) exitWith {
 
-    _unit enableAI "all";
+    _unit disableAI "all";
 
-    _unit playMoveNow "";
+    [_unit, "AmovPercMstpSnonWnonDnon_EaseIn", true] call SSV_Android_fnc_global_syncAnim;
+
+    _unit enableMimics false;
 
 };
 
-_unit disableAI "all";
+_unit enableAI "all";
 
-_unit playMoveNow "AmovPercMstpSlowWrflDnon_Salute";
+[_unit, "AmovPercMstpSnonWnonDnon_EaseOut", true] call SSV_Android_fnc_global_syncAnim;
 
-_unit enableMimics _state;
+_unit enableMimics true;

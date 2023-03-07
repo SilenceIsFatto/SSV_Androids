@@ -17,14 +17,14 @@
 					rarityGroup=0.30000001;
 					class Unit0
 					{
-						side=1;
+						side=0;
 						vehicle="SSV_Unit_Android_Military_SL_Ruined";
 						rank="SERGEANT";
 						position[]={0,0,0};
 					};
 					class Unit1
 					{
-						side=1;
+						side=0;
 						vehicle="SSV_Unit_Android_Military_Ruined";
 						rank="PRIVATE";
 						position[]={5,-5,0};
@@ -38,14 +38,14 @@
 					};
 					class Unit3
 					{
-						side=1;
+						side=0;
 						vehicle="SSV_Unit_Android_Military_Medic_Ruined";
 						rank="PRIVATE";
 						position[]={10,-10,0};
 					};
 					class Unit4
 					{
-						side=1;
+						side=0;
 						vehicle="SSV_Unit_Android_Military_Medic_Ruined";
 						rank="PRIVATE";
 						position[]={-10,-10,0};

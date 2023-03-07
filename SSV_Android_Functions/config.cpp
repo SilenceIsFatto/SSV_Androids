@@ -41,6 +41,21 @@ class CfgFunctions
             {
                 file = "SSV_Android_Functions\functions\fn_android_weaponInit.sqf";
             };
+
+            class global_syncAnim 
+            {
+                file = "SSV_Android_Functions\functions\fn_global_syncAnim.sqf";
+            };
+
+            class global_syncChat
+            {
+                file = "SSV_Android_Functions\functions\fn_global_syncChat.sqf";
+            };
+
+            class postProcessing 
+            {
+                file = "SSV_Android_Functions\functions\fn_postProcessing.sqf";
+            };
 			
         };
 		
