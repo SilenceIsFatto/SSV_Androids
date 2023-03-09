@@ -14,7 +14,7 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {"SSV_Android"};
 		name = "SSV - Android Functions";
-		author = "EHS";
+		author = "SSV";
 	};
 };
 
@@ -50,6 +50,16 @@ class CfgFunctions
             class global_syncChat
             {
                 file = "SSV_Android_Functions\functions\fn_global_syncChat.sqf";
+            };
+
+            class isAndroid 
+            {
+                file = "SSV_Android_Functions\functions\fn_isAndroid.sqf";
+            };
+
+            class isUsingAbility 
+            {
+                file = "SSV_Android_Functions\functions\fn_isUsingAbility.sqf";
             };
 
             class postProcessing 

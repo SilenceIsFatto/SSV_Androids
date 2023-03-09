@@ -1,9 +1,9 @@
     class I_MBT_03_cannon_F;
 
-	class EHS_Vehicle_Android_Tank_Base : I_MBT_03_cannon_F
+	class SSV_Vehicle_Android_Tank_Base : I_MBT_03_cannon_F
 	{
 		side=1;
-		author="EHS";
+		author="SSV";
 		scope = 1;
 	
 		faction = "SSV_Aux_Androids";
@@ -14,7 +14,7 @@
 		};
 	};
 
-	class EHS_Vehicle_Android_Tank : EHS_Vehicle_Android_Tank_Base
+	class SSV_Vehicle_Android_Tank : SSV_Vehicle_Android_Tank_Base
 	{
 		displayName = "Android Tank";
 		scope = 2;
@@ -31,7 +31,7 @@
 			class Android
 			{
 				displayName="Android";
-				author="EHS";
+				author="SSV";
 				factions[]=
 				{
 					"SSV_Aux_Androids"
@@ -52,7 +52,7 @@
 		};
 	};
 
-	class EHS_Vehicle_Android_Tank_Ruined : EHS_Vehicle_Android_Tank_Base
+	class SSV_Vehicle_Android_Tank_Ruined : SSV_Vehicle_Android_Tank_Base
 	{
 		displayName = "Replika Tank";
 		scope = 2;
@@ -70,7 +70,7 @@
 			class Replika
 			{
 				displayName="Replika";
-				author="EHS";
+				author="SSV";
 				factions[]=
 				{
 					"SSV_Aux_Replikas"
@@ -97,3 +97,6 @@
 			"SSV_Unit_Android_Military_Ruined"
 		};
 	};
+
+	class EHS_Vehicle_Android_Tank : SSV_Vehicle_Android_Tank {};
+	class EHS_Vehicle_Android_Tank_Ruined : SSV_Vehicle_Android_Tank_Ruined {};

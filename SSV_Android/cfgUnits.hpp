@@ -10,7 +10,7 @@
 		icon="iconManLeader";
 		faction = "SSV_Aux_Androids";
 		side=1;
-		author="EHS";
+		author="SSV";
 		scope = 1;
 		class Wounds
 		{
@@ -240,6 +240,7 @@
             "SSV_Android\textures\pilot\pilot_uniform.rvmat"
         };
 	};
+
 	class SSV_Unit_Android_Pilot_Ruined: SSV_Unit_Android_Base
 	{
 		_generalMacro="SSV_Unit_Android_Pilot_Ruined";
@@ -314,6 +315,7 @@
             "SSV_Android\textures\pilot\pilot_uniform.rvmat"
         };
 	};
+
 	class SSV_Unit_Android_Military: SSV_Unit_Android_Pilot
 	{
 		_generalMacro="SSV_Unit_Android_Military";
@@ -406,6 +408,7 @@
             "SSV_Android\textures\military\military_uniform.rvmat"
         };
 	};
+
 	class SSV_Unit_Android_Military_Medic: SSV_Unit_Android_Pilot
 	{
 		_generalMacro="SSV_Unit_Android_Military_Medic";
@@ -500,6 +503,7 @@
             "SSV_Android\textures\military\military_uniform.rvmat"
         };
 	};
+
 	class SSV_Unit_Android_Military_SL: SSV_Unit_Android_Pilot
 	{
 		_generalMacro="SSV_Unit_Android_Military_SL";
@@ -592,6 +596,12 @@
             "SSV_Android\textures\military\military_uniform.rvmat"
         };
 	};
+
+	class EHS_Unit_Android_Pilot 			: SSV_Unit_Android_Pilot {};
+	class EHS_Unit_Android_Military 		: SSV_Unit_Android_Military {};
+	class EHS_Unit_Android_Military_Medic 	: SSV_Unit_Android_Military_Medic {};
+	class EHS_Unit_Android_Military_SL 		: SSV_Unit_Android_Military_SL {};
+
 	class SSV_Unit_Android_Military_Ruined: SSV_Unit_Android_Military
 	{
 		_generalMacro="SSV_Unit_Android_Military_Ruined";
@@ -857,3 +867,8 @@
             "SSV_Android\textures\military\ruined\military_uniform.rvmat"
         };
 	};
+
+	class EHS_Unit_Android_Pilot_Ruined 			: SSV_Unit_Android_Pilot_Ruined {};
+	class EHS_Unit_Android_Military_Ruined 			: SSV_Unit_Android_Military_Ruined {};
+	class EHS_Unit_Android_Military_Medic_Ruined 	: SSV_Unit_Android_Military_Medic_Ruined {};
+	class EHS_Unit_Android_Military_SL_Ruined 		: SSV_Unit_Android_Military_SL_Ruined {};

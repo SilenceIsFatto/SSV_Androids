@@ -1,4 +1,10 @@
-params ["_unit"];
+params ["_unit", ["_item", "NONE"]];
+
+if ([_unit] call SSV_Android_fnc_isUsingAbility) exitWith {hint "You already used an ability. Calm down! You might become addicted!"};
+
+if !(_item isEqualTo "NONE") then {_unit removeItem _item};
+
+_unit setVariable ["ssv_ability_usingAbility", true];
 
 [_unit, "ApanPercMstpSnonWnonDnon_G01"] remoteExec ["switchMove"];
 
@@ -21,5 +27,7 @@ uiSleep 5; // give time for a "charge" of sorts
 [_unit, ""] remoteExec ["switchMove"];
 
 ["A Clairvoyant has activated their Disorient ability. Clairvoyant range is 100m.", true] call SSV_Android_fnc_global_syncChat;
+
+_unit setVariable ["ssv_ability_usingAbility", false];
 
 // [_unit] remoteExec ["SSV_Android_fnc_ability_disorient_draw"];

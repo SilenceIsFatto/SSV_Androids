@@ -14,7 +14,7 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {"SSV_Common"};
 		name = "SSV - Android Common";
-		author = "EHS";
+		author = "SSV";
 	};
 };
 
@@ -25,7 +25,7 @@ class cfgWeapons
 
 	class SSV_Helmet_Base : H_HelmetB
 	{
-		author = "EHS";
+		author = "SSV";
 		weaponPoolAvailable = 0;
 		picture="\SSV_Common\SSV_logo_co.paa";
 		scope = 0;
@@ -61,7 +61,7 @@ class CfgFactionClasses
 	class SSV_Aux_Androids
 	{
 		displayName = "Androids";
-		author = "EHS";
+		author = "SSV";
 		picture = "\SSV_Common\SSV_logo_co.paa";
 		priority = 2;
 		side = 1; // BLUFOR
@@ -69,7 +69,7 @@ class CfgFactionClasses
 	class SSV_Aux_Replikas
 	{
 		displayName = "Replikas";
-		author = "EHS";
+		author = "SSV";
 		picture = "\SSV_Common\SSV_logo_co.paa";
 		priority = 2;
 		side = 0; // OPFOR
@@ -88,7 +88,7 @@ class CfgFaces
 		class SSV_replika_face_01: hal_synth_face_01
 		{
 			scope=2;
-			author="EHS";
+			author="SSV";
 			displayname="Replika (Red)";
 			disabled=0;
 			// textureHL="SSV_Replika_Common\textures\hl_robo_01_co.paa";
@@ -117,7 +117,7 @@ class CfgFaces
 		class SSV_android_face_01: Kerry
 		{
 			scope=2;
-			author="EHS";
+			author="SSV";
 			displayname="Android (White)";
 			disabled=0;
 			texture="SSV_Android_Common\textures\humanlike\white\robots_become_human_co.paa";
@@ -131,7 +131,7 @@ class CfgFaces
 		class SSV_android_face_02: AfricanHead_01
 		{
 			scope=2;
-			author="EHS";
+			author="SSV";
 			displayname="Android (Black)";
 			disabled=0;
 			texture="SSV_Android_Common\textures\humanlike\black\robots_become_human_co.paa";
@@ -145,7 +145,7 @@ class CfgFaces
 		class SSV_android_face_03: AsianHead_A3_01
 		{
 			scope=2;
-			author="EHS";
+			author="SSV";
 			displayname="Android (Asian)";
 			disabled=0;
 			texture="SSV_Android_Common\textures\humanlike\asian\robots_become_human_co.paa";

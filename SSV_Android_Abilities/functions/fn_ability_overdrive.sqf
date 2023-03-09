@@ -1,4 +1,10 @@
-params ["_unit", ["_timer", 30]];
+params ["_unit", ["_timer", 30], ["_item", "NONE"]];
+
+if ([_unit] call SSV_Android_fnc_isUsingAbility) exitWith {hint "You already used an ability. Calm down! You might become addicted!"};
+
+if !(_item isEqualTo "NONE") then {_unit removeItem _item};
+
+_unit setVariable ["ssv_ability_usingAbility", true];
 
 //_unit switchMove "ApanPercMstpSnonWnonDnon_G01";
 //uiSleep 5;
@@ -20,3 +26,5 @@ _unit enableFatigue true;
 [_unit, _coefAnim] remoteExec ["setAnimSpeedCoef"];
 
 _unit setCustomAimCoef _coefSway;
+
+_unit setVariable ["ssv_ability_usingAbility", false];

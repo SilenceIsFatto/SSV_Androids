@@ -42,3 +42,8 @@
 		displayName = "112 Heavy Rifle (Replika)";
 		BaseWeapon = "SSV_Weapon_Android_MSBS_Ruined";
 	};
+
+	class EHS_Weapon_Android_ARX : SSV_Weapon_Android_ARX {};
+	class EHS_Weapon_Android_ARX_Ruined : SSV_Weapon_Android_ARX_Ruined {};
+	class EHS_Weapon_Android_MSBS : SSV_Weapon_Android_MSBS {};
+	class EHS_Weapon_Android_MSBS_Ruined : SSV_Weapon_Android_MSBS_Ruined {};
