@@ -8,7 +8,7 @@
     {
         params ["_unit", "_container", "_item", "_slot", "_params"]; // parameters
         
-        [_unit, 30, _item] spawn SSV_Android_fnc_ability_overdrive;
+        [_unit, 15, _item] spawn SSV_Android_fnc_ability_overdrive;
     },
     false, // remove from inventory
     [] // extra params passed

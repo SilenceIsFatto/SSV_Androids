@@ -63,7 +63,7 @@ class CfgFactionClasses
 		displayName = "Androids";
 		author = "SSV";
 		picture = "\SSV_Common\SSV_logo_co.paa";
-		priority = 2;
+		priority = 20;
 		side = 1; // BLUFOR
 	};
 	class SSV_Aux_Replikas
@@ -71,7 +71,15 @@ class CfgFactionClasses
 		displayName = "Replikas";
 		author = "SSV";
 		picture = "\SSV_Common\SSV_logo_co.paa";
-		priority = 2;
+		priority = 19;
+		side = 0; // OPFOR
+	};
+	class SSV_Aux_Corrupted
+	{
+		displayName = "Corrupted";
+		author = "SSV";
+		picture = "\SSV_Common\SSV_logo_co.paa";
+		priority = 20;
 		side = 0; // OPFOR
 	};
 };

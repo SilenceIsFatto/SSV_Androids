@@ -7,6 +7,7 @@
 		scope = 1;
 	
 		faction = "SSV_Aux_Androids";
+		editorPreview = "\SSV_Android\previews\vehicles\SSV_Vehicle_Android_Ifrit.jpg";
 		crew="SSV_Unit_Android_Pilot";
 		typicalCargo[]=
 		{
@@ -50,4 +51,4 @@
 		};
 	};
 
-	class EHS_Vehicle_Android_Ifrit : SSV_Vehicle_Android_Ifrit {};
+	class EHS_Vehicle_Android_Ifrit : SSV_Vehicle_Android_Ifrit {scope=1; scopeCurator=1};

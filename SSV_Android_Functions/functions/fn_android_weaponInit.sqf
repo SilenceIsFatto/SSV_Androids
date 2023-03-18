@@ -1,3 +1,16 @@
+/*
+	Purpose: Adds attachments to android weapons
+
+	Made by: Silence
+
+    Arguments:
+    _unit	<OBJECT>
+	
+	Example:
+	[ _this ] call SSV_Android_fnc_android_weaponInit;
+    ^ only works on androids
+*/
+
 params ["_unit"];
 
 // [weaponName, itemName, instant]

@@ -8,6 +8,7 @@
 		scope = 1;
 	
 		faction = "SSV_Aux_Androids";
+		editorPreview = "\SSV_Android\previews\vehicles\SSV_Vehicle_Android_APC.jpg";
 		crew="SSV_Unit_Android_Pilot";
 		typicalCargo[]=
 		{
@@ -22,6 +23,7 @@
 		scope = 1;
 	
 		faction = "SSV_Aux_Replikas";
+		editorPreview = "\SSV_Android\previews\vehicles\SSV_Vehicle_Android_APC_Ruined.jpg";
 		crew="SSV_Unit_Android_Pilot_Ruined";
 		typicalCargo[]=
 		{
@@ -105,5 +107,5 @@
 		};
 	};
 
-	class EHS_Vehicle_Android_APC 			: SSV_Vehicle_Android_APC {};
-	class EHS_Vehicle_Android_APC_Ruined 	: SSV_Vehicle_Android_APC_Ruined {};
+	class EHS_Vehicle_Android_APC 			: SSV_Vehicle_Android_APC {scope=1; scopeCurator=1};
+	class EHS_Vehicle_Android_APC_Ruined 	: SSV_Vehicle_Android_APC_Ruined {scope=1; scopeCurator=1};

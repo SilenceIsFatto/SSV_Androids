@@ -8,6 +8,7 @@
 		scope = 1;
 	
 		faction = "SSV_Aux_Androids";
+		editorPreview = "\SSV_Android\previews\vehicles\SSV_Vehicle_Android_VTOL_Infantry.jpg";
 		crew="SSV_Unit_Android_Pilot";
 		typicalCargo[]=
 		{
@@ -22,6 +23,7 @@
 		scope = 1;
 	
 		faction = "SSV_Aux_Androids";
+		editorPreview = "\SSV_Android\previews\vehicles\SSV_Vehicle_Android_VTOL_Infantry.jpg";
 		crew="SSV_Unit_Android_Pilot";
 		typicalCargo[]=
 		{
@@ -76,6 +78,7 @@
 		scope = 2;
 		scopeCurator = 2;
 		faction = "SSV_Aux_Replikas";
+		editorPreview = "\SSV_Android\previews\vehicles\SSV_Vehicle_Android_VTOL_Infantry_Ruined.jpg";
 		side = 0;
 
 		hiddenSelectionsTextures[]=
@@ -166,6 +169,7 @@
 		scope = 2;
 		scopeCurator = 2;
 		faction = "SSV_Aux_Replikas";
+		editorPreview = "\SSV_Android\previews\vehicles\SSV_Vehicle_Android_VTOL_Infantry_Ruined.jpg";
 		side = 0;
 
 		hiddenSelectionsTextures[]=
@@ -209,8 +213,8 @@
 		};
 	};
 
-	class EHS_Vehicle_Android_VTOL_Infantry : SSV_Vehicle_Android_VTOL_Infantry {};
-	class EHS_Vehicle_Android_VTOL_Infantry_Ruined : SSV_Vehicle_Android_VTOL_Infantry_Ruined {};
+	class EHS_Vehicle_Android_VTOL_Infantry : SSV_Vehicle_Android_VTOL_Infantry {scope=1; scopeCurator=1};
+	class EHS_Vehicle_Android_VTOL_Infantry_Ruined : SSV_Vehicle_Android_VTOL_Infantry_Ruined {scope=1; scopeCurator=1};
 
-	class EHS_Vehicle_Android_VTOL_VIV : SSV_Vehicle_Android_VTOL_VIV {};
-	class EHS_Vehicle_Android_VTOL_VIV_Ruined : SSV_Vehicle_Android_VTOL_VIV_Ruined {};
+	class EHS_Vehicle_Android_VTOL_VIV : SSV_Vehicle_Android_VTOL_VIV {scope=1; scopeCurator=1};
+	class EHS_Vehicle_Android_VTOL_VIV_Ruined : SSV_Vehicle_Android_VTOL_VIV_Ruined {scope=1; scopeCurator=1};

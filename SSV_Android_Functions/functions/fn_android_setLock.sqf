@@ -1,3 +1,17 @@
+/*
+	Purpose: "Locks" android, sets animation and essentially shuts them down
+
+	Made by: Silence
+
+    Arguments:
+    _unit	<OBJECT>
+    _state	<BOOL>
+	
+	Example:
+	[ _this ] call SSV_Android_fnc_android_setLock;
+    ^ only works on androids
+*/
+
 params ["_unit", ["_state", true]];
 
 // if !(_unit getVariable ["ssv_isAndroid", false]) exitWith {};

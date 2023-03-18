@@ -20,7 +20,7 @@ uiSleep 5; // give time for a "charge" of sorts
     private _canSee = [objNull, "VIEW"] checkVisibility [eyePos _unit, eyePos _target];
 
     if (_canSee isEqualTo 1) exitWith {
-        [_target, (random [10, 20])] spawn SSV_Android_fnc_postProcessing;
+        [_target, (random [5, 10, 15])] spawn SSV_Android_fnc_postProcessing;
     };
 } forEach _targets;
 

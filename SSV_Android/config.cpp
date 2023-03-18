@@ -80,6 +80,14 @@ class cfgWeapons
 		hiddenSelectionsMaterials[] = {"SSV_Android\textures\assault\ruined\assault.rvmat"};
 	};
 
+	class SSV_Helmet_Android_Worker : SSV_Helmet_Android_Assault
+	{
+		displayName = "Android Helmet (Worker)";
+
+		hiddenSelectionsTextures[] = {"SSV_Android\textures\worker\worker_co.paa"};
+		hiddenSelectionsMaterials[] = {"SSV_Android\textures\worker\worker.rvmat"};
+	};
+
 	class SSV_Helmet_Android_Military : SSV_Helmet_Base
 	{ // don't mind the fact that it's referenced in files as military, we really mean police
 		displayName = "Android Helmet (Police)";

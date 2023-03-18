@@ -33,7 +33,7 @@
 		hiddenSelectionsMaterials[] = {"SSV_Android\textures\military\ruined\military_vest.rvmat"};
 	};
 
-	class EHS_Vest_Android_Military 				: SSV_Vest_Android_Military {};
-	class EHS_Vest_Android_Military_Heavy 			: SSV_Vest_Android_Military_Heavy {};
-	class EHS_Vest_Android_Military_Ruined 			: SSV_Vest_Android_Military_Ruined {};
-	class EHS_Vest_Android_Military_Heavy_Ruined 	: SSV_Vest_Android_Military_Heavy_Ruined {};
+	class EHS_Vest_Android_Military 				: SSV_Vest_Android_Military {scope=1; scopeCurator=1};
+	class EHS_Vest_Android_Military_Heavy 			: SSV_Vest_Android_Military_Heavy {scope=1; scopeCurator=1};
+	class EHS_Vest_Android_Military_Ruined 			: SSV_Vest_Android_Military_Ruined {scope=1; scopeCurator=1};
+	class EHS_Vest_Android_Military_Heavy_Ruined 	: SSV_Vest_Android_Military_Heavy_Ruined {scope=1; scopeCurator=1};

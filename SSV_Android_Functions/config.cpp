@@ -32,6 +32,11 @@ class CfgFunctions
                 file = "SSV_Android_Functions\functions\fn_android_init.sqf";
             };
 
+            class android_setIdentity
+            {
+                file = "SSV_Android_Functions\functions\fn_android_setIdentity.sqf";
+            };
+
             class android_setLock
             {
                 file = "SSV_Android_Functions\functions\fn_android_setLock.sqf";
@@ -40,6 +45,11 @@ class CfgFunctions
             class android_weaponInit 
             {
                 file = "SSV_Android_Functions\functions\fn_android_weaponInit.sqf";
+            };
+
+            class canUseAbility 
+            {
+                file = "SSV_Android_Functions\functions\fn_canUseAbility.sqf";
             };
 
             class global_syncAnim 

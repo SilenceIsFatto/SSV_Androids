@@ -7,6 +7,7 @@
 		scope = 1;
 	
 		faction = "SSV_Aux_Androids";
+		editorPreview = "\SSV_Android\previews\vehicles\SSV_Vehicle_Android_Tank.jpg";
 		crew="SSV_Unit_Android_Pilot";
 		typicalCargo[]=
 		{
@@ -55,6 +56,7 @@
 	class SSV_Vehicle_Android_Tank_Ruined : SSV_Vehicle_Android_Tank_Base
 	{
 		displayName = "Replika Tank";
+		editorPreview = "\SSV_Android\previews\vehicles\SSV_Vehicle_Android_Tank_Ruined.jpg";
 		scope = 2;
         side = 0;
 
@@ -98,5 +100,5 @@
 		};
 	};
 
-	class EHS_Vehicle_Android_Tank : SSV_Vehicle_Android_Tank {};
-	class EHS_Vehicle_Android_Tank_Ruined : SSV_Vehicle_Android_Tank_Ruined {};
+	class EHS_Vehicle_Android_Tank : SSV_Vehicle_Android_Tank {scope=1; scopeCurator=1};
+	class EHS_Vehicle_Android_Tank_Ruined : SSV_Vehicle_Android_Tank_Ruined {scope=1; scopeCurator=1};

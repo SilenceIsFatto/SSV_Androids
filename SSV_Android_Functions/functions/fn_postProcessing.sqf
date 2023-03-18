@@ -1,3 +1,7 @@
+// Fuck knows how or why this works, but it does (I think)
+// ^
+// That right there folks is called Foreshadowing. It in fact, did not work.
+
 params ["_unit", "_time"];
 
 if (local _unit && {isPlayer _unit}) then {

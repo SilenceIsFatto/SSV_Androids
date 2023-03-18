@@ -7,6 +7,7 @@
 		scope = 1;
 	
 		faction = "SSV_Aux_Replikas";
+		editorPreview = "\SSV_Android\previews\vehicles\SSV_Vehicle_Android_Strider_Ruined.jpg";
 		crew="SSV_Unit_Android_Pilot_Ruined";
 		typicalCargo[]=
 		{
@@ -48,4 +49,4 @@
 		};
 	};
 
-	class EHS_Vehicle_Android_Strider_Ruined : SSV_Vehicle_Android_Strider_Ruined {};
+	class EHS_Vehicle_Android_Strider_Ruined : SSV_Vehicle_Android_Strider_Ruined {scope=1; scopeCurator=1};
