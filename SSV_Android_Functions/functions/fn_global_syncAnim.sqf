@@ -9,7 +9,7 @@
 	_global	<BOOL> <DEFAULT: false>
 	
 	Example:
-	[ player, "", true ] call EHS_Common_fnc_globalAnim;
+	[ player, "", true ] call SSV_Common_fnc_globalAnim;
 */
 
 params ["_unit", "_anim", ["_global", false]];

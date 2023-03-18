@@ -1,13 +1,14 @@
 	class O_T_VTOL_02_infantry_F;
 	class O_T_VTOL_02_vehicle_F;
 
-	class EHS_Vehicle_Android_VTOL_Infantry_Base : O_T_VTOL_02_infantry_F
+	class SSV_Vehicle_Android_VTOL_Infantry_Base : O_T_VTOL_02_infantry_F
 	{
 		side=1;
-		author="EHS";
+		author="SSV";
 		scope = 1;
 	
 		faction = "SSV_Aux_Androids";
+		editorPreview = "\SSV_Android\previews\vehicles\SSV_Vehicle_Android_VTOL_Infantry.jpg";
 		crew="SSV_Unit_Android_Pilot";
 		typicalCargo[]=
 		{
@@ -15,13 +16,14 @@
 		};
 	};
 
-	class EHS_Vehicle_Android_VTOL_VIV_Base : O_T_VTOL_02_vehicle_F
+	class SSV_Vehicle_Android_VTOL_VIV_Base : O_T_VTOL_02_vehicle_F
 	{
 		side=1;
-		author="EHS";
+		author="SSV";
 		scope = 1;
 	
 		faction = "SSV_Aux_Androids";
+		editorPreview = "\SSV_Android\previews\vehicles\SSV_Vehicle_Android_VTOL_Infantry.jpg";
 		crew="SSV_Unit_Android_Pilot";
 		typicalCargo[]=
 		{
@@ -29,7 +31,7 @@
 		};
 	};
 
-	class EHS_Vehicle_Android_VTOL_Infantry : EHS_Vehicle_Android_VTOL_Infantry_Base
+	class SSV_Vehicle_Android_VTOL_Infantry : SSV_Vehicle_Android_VTOL_Infantry_Base
 	{
 		displayName = "Android Type 2 VTOL";
 		scope = 2;
@@ -48,7 +50,7 @@
 			class Android
 			{
 				displayName="Android";
-				author="EHS";
+				author="SSV";
 				factions[]=
 				{
 					"SSV_Aux_Androids"
@@ -70,12 +72,13 @@
 		};
 	};
 
-	class EHS_Vehicle_Android_VTOL_Infantry_Ruined : EHS_Vehicle_Android_VTOL_Infantry_Base
+	class SSV_Vehicle_Android_VTOL_Infantry_Ruined : SSV_Vehicle_Android_VTOL_Infantry_Base
 	{
 		displayName = "Replika Type 2 VTOL";
 		scope = 2;
 		scopeCurator = 2;
 		faction = "SSV_Aux_Replikas";
+		editorPreview = "\SSV_Android\previews\vehicles\SSV_Vehicle_Android_VTOL_Infantry_Ruined.jpg";
 		side = 0;
 
 		hiddenSelectionsTextures[]=
@@ -91,7 +94,7 @@
 			class Replika
 			{
 				displayName="Replika";
-				author="EHS";
+				author="SSV";
 				factions[]=
 				{
 					"SSV_Aux_Replika"
@@ -119,7 +122,7 @@
 		};
 	};
 
-	class EHS_Vehicle_Android_VTOL_VIV : EHS_Vehicle_Android_VTOL_VIV_Base
+	class SSV_Vehicle_Android_VTOL_VIV : SSV_Vehicle_Android_VTOL_VIV_Base
 	{
 		displayName = "Android Type 3 VTOL";
 		scope = 2;
@@ -138,7 +141,7 @@
 			class Android
 			{
 				displayName="Android";
-				author="EHS";
+				author="SSV";
 				factions[]=
 				{
 					"SSV_Aux_Androids"
@@ -160,12 +163,13 @@
 		};
 	};
 
-	class EHS_Vehicle_Android_VTOL_VIV_Ruined : EHS_Vehicle_Android_VTOL_VIV_Base
+	class SSV_Vehicle_Android_VTOL_VIV_Ruined : SSV_Vehicle_Android_VTOL_VIV_Base
 	{
 		displayName = "Replika Type 3 VTOL";
 		scope = 2;
 		scopeCurator = 2;
 		faction = "SSV_Aux_Replikas";
+		editorPreview = "\SSV_Android\previews\vehicles\SSV_Vehicle_Android_VTOL_Infantry_Ruined.jpg";
 		side = 0;
 
 		hiddenSelectionsTextures[]=
@@ -181,7 +185,7 @@
 			class Replika
 			{
 				displayName="Replika";
-				author="EHS";
+				author="SSV";
 				factions[]=
 				{
 					"SSV_Aux_Replika"
@@ -208,3 +212,9 @@
 			"SSV_Unit_Android_Military_Ruined"
 		};
 	};
+
+	class EHS_Vehicle_Android_VTOL_Infantry : SSV_Vehicle_Android_VTOL_Infantry {scope=1; scopeCurator=1};
+	class EHS_Vehicle_Android_VTOL_Infantry_Ruined : SSV_Vehicle_Android_VTOL_Infantry_Ruined {scope=1; scopeCurator=1};
+
+	class EHS_Vehicle_Android_VTOL_VIV : SSV_Vehicle_Android_VTOL_VIV {scope=1; scopeCurator=1};
+	class EHS_Vehicle_Android_VTOL_VIV_Ruined : SSV_Vehicle_Android_VTOL_VIV_Ruined {scope=1; scopeCurator=1};

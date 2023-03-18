@@ -1,12 +1,13 @@
     class I_MRAP_03_F;
 
-	class EHS_Vehicle_Android_Strider_Base : I_MRAP_03_F
+	class SSV_Vehicle_Android_Strider_Base : I_MRAP_03_F
 	{
 		side=0;
-		author="EHS";
+		author="SSV";
 		scope = 1;
 	
 		faction = "SSV_Aux_Replikas";
+		editorPreview = "\SSV_Android\previews\vehicles\SSV_Vehicle_Android_Strider_Ruined.jpg";
 		crew="SSV_Unit_Android_Pilot_Ruined";
 		typicalCargo[]=
 		{
@@ -14,7 +15,7 @@
 		};
 	};
 
-	class EHS_Vehicle_Android_Strider_Ruined : EHS_Vehicle_Android_Strider_Base
+	class SSV_Vehicle_Android_Strider_Ruined : SSV_Vehicle_Android_Strider_Base
 	{
 		displayName = "Replika MRAP";
 		scope = 2;
@@ -29,7 +30,7 @@
 			class Replika
 			{
 				displayName="Replika";
-				author="EHS";
+				author="SSV";
 				factions[]=
 				{
 					"SSV_Aux_Replikas"
@@ -47,3 +48,5 @@
 			1
 		};
 	};
+
+	class EHS_Vehicle_Android_Strider_Ruined : SSV_Vehicle_Android_Strider_Ruined {scope=1; scopeCurator=1};

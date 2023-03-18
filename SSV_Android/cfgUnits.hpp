@@ -10,7 +10,7 @@
 		icon="iconManLeader";
 		faction = "SSV_Aux_Androids";
 		side=1;
-		author="EHS";
+		author="SSV";
 		scope = 1;
 		class Wounds
 		{
@@ -174,6 +174,7 @@
 		scope=2;
 		displayName="Android Pilot";
 		model = "\A3\Characters_F\Common\coveralls.p3d";
+		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Pilot.jpg";
 		uniformClass="SSV_Uniform_Android_Pilot";
 		identityTypes[]=
 		{
@@ -240,6 +241,83 @@
             "SSV_Android\textures\pilot\pilot_uniform.rvmat"
         };
 	};
+
+	class SSV_Unit_Android_Worker: SSV_Unit_Android_Base
+	{
+		_generalMacro="SSV_Unit_Android_Worker";
+		scope=2;
+		displayName="Android Worker";
+		model = "\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
+		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Pilot.jpg";
+		uniformClass="SSV_Uniform_Android_Worker";
+		identityTypes[]=
+		{
+			"LanguageENGVR_F",
+			"SSV_android_head_01",
+			"NoGlasses"
+		};
+		linkedItems[]=
+		{
+			"SSV_Helmet_Android_Worker",
+			"SSV_Vest_Android_Military",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"SSV_Helmet_Android_Worker",
+			"SSV_Vest_Android_Military",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"Binocular"
+		};
+		respawnWeapons[]=
+		{
+			"Throw",
+			"Put",
+			"Binocular"
+		};
+		magazines[]=
+		{
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green"
+		};
+		respawnMagazines[]=
+		{
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green"
+		};
+		hiddenSelections[] =
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"SSV_Android\textures\worker\worker_uniform_co.paa"
+		};
+        hiddenSelectionsMaterials[] =
+        {
+            "SSV_Android\textures\worker\worker_uniform.rvmat"
+        };
+	};
+
 	class SSV_Unit_Android_Pilot_Ruined: SSV_Unit_Android_Base
 	{
 		_generalMacro="SSV_Unit_Android_Pilot_Ruined";
@@ -247,6 +325,7 @@
 		faction = "SSV_Aux_Replikas";
 		displayName="Replika Pilot";
 		model = "\A3\Characters_F\Common\coveralls.p3d";
+		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Pilot_Ruined.jpg";
 		uniformClass="SSV_Uniform_Android_Pilot";
 		side=0;
 		identityTypes[]=
@@ -314,11 +393,13 @@
             "SSV_Android\textures\pilot\pilot_uniform.rvmat"
         };
 	};
+
 	class SSV_Unit_Android_Military: SSV_Unit_Android_Pilot
 	{
 		_generalMacro="SSV_Unit_Android_Military";
 		displayName="Android Police";
 		model = "\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
+		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Military.jpg";
 		uniformClass="SSV_Uniform_Android_Military";
 		nakeduniform="U_hal_synth_red_base";
 		optic = "optic_holosight_smg_blk_f";
@@ -406,11 +487,13 @@
             "SSV_Android\textures\military\military_uniform.rvmat"
         };
 	};
+
 	class SSV_Unit_Android_Military_Medic: SSV_Unit_Android_Pilot
 	{
 		_generalMacro="SSV_Unit_Android_Military_Medic";
 		displayName="Android Police Medic";
 		model = "\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
+		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Military_Medic.jpg";
 		uniformClass="SSV_Uniform_Android_Military";
 		nakeduniform="U_hal_synth_red_base";
 		backpack="B_hal_medic_ViperLightHarness_blk_F";
@@ -500,11 +583,13 @@
             "SSV_Android\textures\military\military_uniform.rvmat"
         };
 	};
+
 	class SSV_Unit_Android_Military_SL: SSV_Unit_Android_Pilot
 	{
 		_generalMacro="SSV_Unit_Android_Military_SL";
 		displayName="Android Police Sergeant";
 		model = "\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
+		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Military_SL.jpg";
 		uniformClass="SSV_Uniform_Android_Military";
 		nakeduniform="U_hal_synth_red_base";
 		optic = "optic_hamr";
@@ -592,11 +677,18 @@
             "SSV_Android\textures\military\military_uniform.rvmat"
         };
 	};
+
+	class EHS_Unit_Android_Pilot 			: SSV_Unit_Android_Pilot {scope=1; scopeCurator=1};
+	class EHS_Unit_Android_Military 		: SSV_Unit_Android_Military {scope=1; scopeCurator=1};
+	class EHS_Unit_Android_Military_Medic 	: SSV_Unit_Android_Military_Medic {scope=1; scopeCurator=1};
+	class EHS_Unit_Android_Military_SL 		: SSV_Unit_Android_Military_SL {scope=1; scopeCurator=1};
+
 	class SSV_Unit_Android_Military_Ruined: SSV_Unit_Android_Military
 	{
 		_generalMacro="SSV_Unit_Android_Military_Ruined";
 		displayName="Replika Police";
 		uniformClass="SSV_Uniform_Android_Military_Ruined";
+		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Military_Ruined.jpg";
 		faction = "SSV_Aux_Replikas";
 		side = 0;
 		nakeduniform="U_hal_synth_red_base";
@@ -689,6 +781,7 @@
 		displayName="Replika Police Medic";
 		uniformClass="SSV_Uniform_Android_Military_Ruined";
 		faction = "SSV_Aux_Replikas";
+		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Military_Medic_Ruined.jpg";
 		side = 0;
 		nakeduniform="U_hal_synth_red_base";
 		optic = "optic_holosight_blk_f";
@@ -775,6 +868,7 @@
 		_generalMacro="SSV_Unit_Android_Military_SL_Ruined";
 		displayName="Replika Police Sergeant";
 		uniformClass="SSV_Uniform_Android_Military_Ruined";
+		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Military_SL_Ruined.jpg";
 		faction = "SSV_Aux_Replikas";
 		side = 0;
 		nakeduniform="U_hal_synth_red_base";
@@ -857,3 +951,8 @@
             "SSV_Android\textures\military\ruined\military_uniform.rvmat"
         };
 	};
+
+	class EHS_Unit_Android_Pilot_Ruined 			: SSV_Unit_Android_Pilot_Ruined {scope=1; scopeCurator=1};
+	class EHS_Unit_Android_Military_Ruined 			: SSV_Unit_Android_Military_Ruined {scope=1; scopeCurator=1};
+	class EHS_Unit_Android_Military_Medic_Ruined 	: SSV_Unit_Android_Military_Medic_Ruined {scope=1; scopeCurator=1};
+	class EHS_Unit_Android_Military_SL_Ruined 		: SSV_Unit_Android_Military_SL_Ruined {scope=1; scopeCurator=1};

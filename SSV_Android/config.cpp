@@ -21,7 +21,7 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {"SSV_Android_Common"};
 		name = "SSV - Androids";
-		author = "EHS";
+		author = "SSV";
 	};
 };
 
@@ -78,6 +78,14 @@ class cfgWeapons
 
 		hiddenSelectionsTextures[] = {"SSV_Android\textures\assault\ruined\assault_co.paa"};
 		hiddenSelectionsMaterials[] = {"SSV_Android\textures\assault\ruined\assault.rvmat"};
+	};
+
+	class SSV_Helmet_Android_Worker : SSV_Helmet_Android_Assault
+	{
+		displayName = "Android Helmet (Worker)";
+
+		hiddenSelectionsTextures[] = {"SSV_Android\textures\worker\worker_co.paa"};
+		hiddenSelectionsMaterials[] = {"SSV_Android\textures\worker\worker.rvmat"};
 	};
 
 	class SSV_Helmet_Android_Military : SSV_Helmet_Base

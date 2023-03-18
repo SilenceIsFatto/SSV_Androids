@@ -1,13 +1,14 @@
     class O_APC_Wheeled_02_rcws_v2_F;
     class B_APC_Wheeled_01_cannon_F;
 
-	class EHS_Vehicle_Android_APC_Base : B_APC_Wheeled_01_cannon_F
+	class SSV_Vehicle_Android_APC_Base : B_APC_Wheeled_01_cannon_F
 	{
 		side=1;
-		author="EHS";
+		author="SSV";
 		scope = 1;
 	
 		faction = "SSV_Aux_Androids";
+		editorPreview = "\SSV_Android\previews\vehicles\SSV_Vehicle_Android_APC.jpg";
 		crew="SSV_Unit_Android_Pilot";
 		typicalCargo[]=
 		{
@@ -15,13 +16,14 @@
 		};
 	};
 
-	class EHS_Vehicle_Android_APC_Ruined_Base : O_APC_Wheeled_02_rcws_v2_F
+	class SSV_Vehicle_Android_APC_Ruined_Base : O_APC_Wheeled_02_rcws_v2_F
 	{
 		side=0;
-		author="EHS";
+		author="SSV";
 		scope = 1;
 	
 		faction = "SSV_Aux_Replikas";
+		editorPreview = "\SSV_Android\previews\vehicles\SSV_Vehicle_Android_APC_Ruined.jpg";
 		crew="SSV_Unit_Android_Pilot_Ruined";
 		typicalCargo[]=
 		{
@@ -29,7 +31,7 @@
 		};
 	};
 
-	class EHS_Vehicle_Android_APC : EHS_Vehicle_Android_APC_Base
+	class SSV_Vehicle_Android_APC : SSV_Vehicle_Android_APC_Base
 	{
 		displayName = "Android APC";
 		scope = 2;
@@ -46,7 +48,7 @@
 			class Android
 			{
 				displayName="Android";
-				author="EHS";
+				author="SSV";
 				factions[]=
 				{
 					"SSV_Aux_Androids"
@@ -67,7 +69,7 @@
 		};
 	};
 
-	class EHS_Vehicle_Android_APC_Ruined : EHS_Vehicle_Android_APC_Ruined_Base
+	class SSV_Vehicle_Android_APC_Ruined : SSV_Vehicle_Android_APC_Ruined_Base
 	{
 		displayName = "Replika APC";
 		scope = 2;
@@ -84,7 +86,7 @@
 			class Replika
 			{
 				displayName="Replika";
-				author="EHS";
+				author="SSV";
 				factions[]=
 				{
 					"SSV_Aux_Replikas"
@@ -104,3 +106,6 @@
 			1
 		};
 	};
+
+	class EHS_Vehicle_Android_APC 			: SSV_Vehicle_Android_APC {scope=1; scopeCurator=1};
+	class EHS_Vehicle_Android_APC_Ruined 	: SSV_Vehicle_Android_APC_Ruined {scope=1; scopeCurator=1};
