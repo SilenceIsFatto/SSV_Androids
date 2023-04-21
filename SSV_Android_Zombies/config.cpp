@@ -6,6 +6,7 @@ class CfgPatches
 		{
 			"SSV_Unit_Android_Corrupted_SL",
 			"SSV_Unit_Android_Corrupted",
+			"SSV_Unit_Android_Corrupted_Melee",
 
 			"SSV_Unit_Android_Corrupted_Dasher",
 			"SSV_Unit_Android_Corrupted_Siren"
@@ -79,7 +80,6 @@ class CfgFunctions
             {
                 file = "\SSV_Android_Zombies\functions\fn_zombie_unique.sqf";
             };
-			
 			
         };
 		

@@ -13,13 +13,13 @@
 		scope=2;
 		displayName="Corrupted Leader";
 		model = "\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
-		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Pilot.jpg";
+		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Corrupted_SL.jpg";
 		uniformClass="SSV_Uniform_Android_Military_Ruined";
 		backpack = "";
 
 		identity = "SSV_replika_identity_1";
 
-		zombieType = 2;
+		zombieType = 5;
 
 		identityTypes[]=
 		{
@@ -29,6 +29,7 @@
 		};
 		linkedItems[]=
 		{
+			"SSV_Mask_Android_Shogun_Ruined",
 			"SSV_Vest_Android_Military_Heavy_Ruined",
 			"ItemMap",
 			"ItemCompass",
@@ -37,6 +38,7 @@
 		};
 		respawnLinkedItems[]=
 		{
+			"SSV_Mask_Android_Shogun_Ruined",
 			"SSV_Vest_Android_Military_Heavy_Ruined",
 			"ItemMap",
 			"ItemCompass",
@@ -82,9 +84,9 @@
 	class SSV_Unit_Android_Corrupted: SSV_Unit_Android_Corrupted_SL
 	{
 		displayName="Corrupted Grunt";
-		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Pilot.jpg";
+		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Corrupted.jpg";
 
-		identity = "SSV_replika_identity_2";
+		identity = "SSV_replika_identity_1";
 
 		zombieType = 3;
 
@@ -96,6 +98,7 @@
 		};
 		linkedItems[]=
 		{
+			"SSV_Mask_Android_Bewildered_Ruined",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -103,10 +106,57 @@
 		};
 		respawnLinkedItems[]=
 		{
+			"SSV_Mask_Android_Bewildered_Ruined",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
+		};
+	};
+
+	class SSV_Unit_Android_Corrupted_Melee: SSV_Unit_Android_Corrupted
+	{
+		displayName="Corrupted Wielder";
+
+		identity = "SSV_replika_identity_2";
+
+		zombieType = 8;
+
+		identityTypes[]=
+		{
+			"LanguageENGVR_F",
+			"SSV_replika_head_2",
+			"NoGlasses"
+		};
+		linkedItems[]=
+		{
+			"SSV_Mask_Android_Bushi_Ruined",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"SSV_Mask_Android_Bushi_Ruined",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		weapons[]=
+		{
+			"WBK_Katana",
+			"Throw",
+			"Put",
+			"Binocular"
+		};
+		respawnWeapons[]=
+		{
+			"WBK_Katana",
+			"Throw",
+			"Put",
+			"Binocular"
 		};
 	};
 
@@ -174,7 +224,7 @@
 		faction = "SSV_Aux_Corrupted";
 		displayName="Corrupted Dasher";
 		model = "\A3\Characters_F\Common\coveralls.p3d";
-		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Pilot_Ruined.jpg";
+		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Corrupted.jpg";
 		uniformClass="SSV_Uniform_Android_Pilot";
 		nakeduniform="U_hal_synth_red_base";
 
@@ -229,7 +279,7 @@
 		faction = "SSV_Aux_Corrupted";
 		displayName="Corrupted Siren";
 		model = "\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
-		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Pilot.jpg";
+		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Corrupted.jpg";
 		uniformClass="SSV_Uniform_Android_Military_Ruined";
 		nakeduniform="U_hal_synth_red_base";
 
