@@ -132,3 +132,22 @@
 			modelSides[] = {"TWest"};
 		};
 	};
+
+	class SSV_Helmet_Android_Assassin : SSV_Helmet_Base
+	{
+		displayName = "Replika Helmet (Assassin)";
+		model = "SSV_Android\android_assassin.p3d";
+		scope = 2;
+
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"SSV_Android\textures\assassin\assassin_co.paa"};
+		hiddenSelectionsMaterials[] = {"SSV_Android\textures\assassin\assassin.rvmat"};
+
+		class ItemInfo : HeadgearItem
+		{
+			mass = 50;
+			hiddenSelections[] = {"camo"};
+			uniformModel = "SSV_Android\android_assassin.p3d";
+			modelSides[] = {"TEast"};
+		};
+	};
