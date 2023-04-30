@@ -1,4 +1,40 @@
 	// cfgWeapons
+	class SSV_Uniform_Android_Assassin : Uniform_Base
+	{
+		scope = 2;
+		author = "SSV";
+		displayName = "Android Assassin Uniform";
+		// model = "\A3\Characters_F\Common\coveralls.p3d";
+		picture = "\SSV_Common\SSV_logo_co.paa";
+		
+		class ItemInfo : UniformItem
+		{
+			uniformClass = "SSV_Unit_Android_Assassin";
+			uniformModel = "-";
+			containerClass = "Supply20";
+			mass = 20;
+			armor = 0.1;
+		};
+	};
+
+	class SSV_Uniform_Android_Assassin_Stealth : Uniform_Base
+	{
+		scope = 2;
+		author = "SSV";
+		displayName = "Android Assassin Stealth Uniform";
+		// model = "\A3\Characters_F\Common\coveralls.p3d";
+		picture = "\SSV_Common\SSV_logo_co.paa";
+		
+		class ItemInfo : UniformItem
+		{
+			uniformClass = "SSV_Unit_Android_Assassin_Stealth";
+			uniformModel = "-";
+			containerClass = "Supply20";
+			mass = 20;
+			armor = 0.1;
+		};
+	};
+
 	class SSV_Uniform_Android_Pilot : Uniform_Base
 	{
 		scope = 2;

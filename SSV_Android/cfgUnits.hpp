@@ -176,6 +176,7 @@
 		model = "\A3\Characters_F\Common\coveralls.p3d";
 		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Pilot.jpg";
 		uniformClass="SSV_Uniform_Android_Pilot";
+		editorSubcategory="SSV_EditorSubcategory_Workers";
 		identityTypes[]=
 		{
 			"LanguageENGVR_F",
@@ -250,6 +251,7 @@
 		model = "\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
 		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Pilot.jpg";
 		uniformClass="SSV_Uniform_Android_Worker";
+		editorSubcategory="SSV_EditorSubcategory_Workers";
 		identityTypes[]=
 		{
 			"LanguageENGVR_F",
@@ -318,6 +320,7 @@
         };
 	};
 
+<<<<<<< Updated upstream
 	class SSV_Unit_Android_Pilot_Ruined: SSV_Unit_Android_Base
 	{
 		_generalMacro="SSV_Unit_Android_Pilot_Ruined";
@@ -332,11 +335,36 @@
 		{
 			"LanguageENGVR_F",
 			"SSV_android_head_01",
+=======
+	class SSV_Unit_Android_Army: SSV_Unit_Android_Pilot
+	{
+		_generalMacro="SSV_Unit_Android_Army";
+		displayName="Android Soldier";
+		model = "\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
+		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Army.jpg";
+		uniformClass="SSV_Uniform_Android_Military";
+		nakeduniform="U_hal_synth_red_base";
+		optic = "optic_ico_01_black_f";
+		muzzle = "";
+		laser = "acc_pointer_ir";
+		bipod = "";
+		editorSubcategory="SSV_EditorSubcategory_Army";
+		identityTypes[]=
+		{
+			"LanguageENGVR_F",
+			"SSV_android_head_02",
+>>>>>>> Stashed changes
 			"NoGlasses"
 		};
 		linkedItems[]=
 		{
+<<<<<<< Updated upstream
 			"SSV_Helmet_Android_Pilot_Ruined",
+=======
+			"SSV_Helmet_Android_Army",
+			"SSV_Vest_Android_Military_Heavy",
+			"G_Balaclava_blk",
+>>>>>>> Stashed changes
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -344,7 +372,13 @@
 		};
 		respawnLinkedItems[]=
 		{
+<<<<<<< Updated upstream
 			"SSV_Helmet_Android_Pilot_Ruined",
+=======
+			"SSV_Helmet_Android_Army",
+			"SSV_Vest_Android_Military_Heavy",
+			"G_Balaclava_blk",
+>>>>>>> Stashed changes
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -352,18 +386,38 @@
 		};
 		weapons[]=
 		{
+<<<<<<< Updated upstream
+=======
+			"SSV_Weapon_Android_MSBS",
+>>>>>>> Stashed changes
 			"Throw",
 			"Put",
 			"Binocular"
 		};
 		respawnWeapons[]=
 		{
+<<<<<<< Updated upstream
+=======
+			"SSV_Weapon_Android_MSBS",
+>>>>>>> Stashed changes
 			"Throw",
 			"Put",
 			"Binocular"
 		};
 		magazines[]=
 		{
+<<<<<<< Updated upstream
+=======
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+>>>>>>> Stashed changes
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -373,6 +427,18 @@
 		};
 		respawnMagazines[]=
 		{
+<<<<<<< Updated upstream
+=======
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+>>>>>>> Stashed changes
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -386,11 +452,227 @@
 		};
 		hiddenSelectionsTextures[] =
 		{
+<<<<<<< Updated upstream
 			"SSV_Android\textures\pilot\pilot_uniform_co.paa"
 		};
         hiddenSelectionsMaterials[] =
         {
             "SSV_Android\textures\pilot\pilot_uniform.rvmat"
+=======
+			"SSV_Android\textures\military\military_uniform_co.paa"
+		};
+        hiddenSelectionsMaterials[] =
+        {
+            "SSV_Android\textures\military\military_uniform.rvmat"
+        };
+	};
+
+	class SSV_Unit_Android_Army_Medic: SSV_Unit_Android_Army
+	{
+		_generalMacro="SSV_Unit_Android_Army_Medic";
+		displayName="Android Medic";
+		model = "\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
+		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Army_Medic.jpg";
+		uniformClass="SSV_Uniform_Android_Military";
+		nakeduniform="U_hal_synth_red_base";
+		backpack="B_Messenger_Black_F";
+		optic = "";
+		muzzle = "";
+		laser = "acc_pointer_ir";
+		bipod = "";
+		identityTypes[]=
+		{
+			"LanguageENGVR_F",
+			"SSV_android_head_01",
+			"NoGlasses"
+		};
+		linkedItems[]=
+		{
+			"SSV_Helmet_Android_Army",
+			"SSV_Vest_Android_Military",
+			"G_Balaclava_blk",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"SSV_Helmet_Android_Army",
+			"SSV_Vest_Android_Military",
+			"G_Balaclava_blk",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		weapons[]=
+		{
+			"SSV_Weapon_Android_ARX",
+			"hgun_esd_01_F",
+			"Throw",
+			"Put",
+			"Binocular"
+		};
+		respawnWeapons[]=
+		{
+			"SSV_Weapon_Android_ARX",
+			"hgun_esd_01_F",
+			"Throw",
+			"Put",
+			"Binocular"
+		};
+		magazines[]=
+		{
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green"
+		};
+		respawnMagazines[]=
+		{
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green"
+		};
+		picture="pictureHeal";
+		icon="iconManMedic";
+		role="CombatLifeSaver";
+		hiddenSelections[] =
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"SSV_Android\textures\military\military_uniform_co.paa"
+		};
+        hiddenSelectionsMaterials[] =
+        {
+            "SSV_Android\textures\military\military_uniform.rvmat"
+        };
+	};
+
+	class SSV_Unit_Android_Army_SL: SSV_Unit_Android_Army
+	{
+		_generalMacro="SSV_Unit_Android_Army_SL";
+		displayName="Android Sergeant";
+		model = "\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
+		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Army_SL.jpg";
+		uniformClass="SSV_Uniform_Android_Military";
+		nakeduniform="U_hal_synth_red_base";
+		optic = "optic_hamr";
+		muzzle = "";
+		laser = "acc_pointer_ir";
+		bipod = "";
+		identityTypes[]=
+		{
+			"LanguageENGVR_F",
+			"SSV_android_head_01",
+			"NoGlasses"
+		};
+		linkedItems[]=
+		{
+			"SSV_Helmet_Android_Assault",
+			"SSV_Vest_Android_Military_Heavy",
+			"G_Balaclava_blk",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"SSV_Helmet_Android_Assault",
+			"SSV_Vest_Android_Military_Heavy",
+			"G_Balaclava_blk",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		weapons[]=
+		{
+			"SSV_Weapon_Android_MSBS",
+			"Throw",
+			"Put",
+			"Binocular"
+		};
+		respawnWeapons[]=
+		{
+			"SSV_Weapon_Android_MSBS",
+			"Throw",
+			"Put",
+			"Binocular"
+		};
+		magazines[]=
+		{
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"HandGrenade",
+			"HandGrenade",
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green"
+		};
+		respawnMagazines[]=
+		{
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_msbs_mag",
+			"HandGrenade",
+			"HandGrenade",
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green"
+		};
+		hiddenSelections[] =
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"SSV_Android\textures\military\military_uniform_co.paa"
+		};
+        hiddenSelectionsMaterials[] =
+        {
+            "SSV_Android\textures\military\military_uniform.rvmat"
+>>>>>>> Stashed changes
         };
 	};
 
@@ -406,6 +688,7 @@
 		muzzle = "";
 		laser = "";
 		bipod = "";
+		editorSubcategory="SSV_EditorSubcategory_Police";
 		identityTypes[]=
 		{
 			"LanguageENGVR_F",
@@ -497,6 +780,7 @@
 		uniformClass="SSV_Uniform_Android_Military";
 		nakeduniform="U_hal_synth_red_base";
 		backpack="B_hal_medic_ViperLightHarness_blk_F";
+		editorSubcategory="SSV_EditorSubcategory_Police";
 		identityTypes[]=
 		{
 			"LanguageENGVR_F",
@@ -523,7 +807,7 @@
 		};
 		weapons[]=
 		{
-			"SSV_Weapon_Android_MSBS",
+			"SSV_Weapon_Android_Katiba",
 			"hgun_esd_01_F",
 			"Throw",
 			"Put",
@@ -531,7 +815,7 @@
 		};
 		respawnWeapons[]=
 		{
-			"SSV_Weapon_Android_MSBS",
+			"SSV_Weapon_Android_Katiba",
 			"hgun_esd_01_F",
 			"Throw",
 			"Put",
@@ -592,10 +876,11 @@
 		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Military_SL.jpg";
 		uniformClass="SSV_Uniform_Android_Military";
 		nakeduniform="U_hal_synth_red_base";
-		optic = "optic_hamr";
+		optic = "optic_Arco_blk_F";
 		muzzle = "";
-		laser = "acc_flashlight";
+		laser = "acc_pointer_IR";
 		bipod = "";
+		editorSubcategory="SSV_EditorSubcategory_Police";
 		identityTypes[]=
 		{
 			"LanguageENGVR_F",
@@ -622,26 +907,26 @@
 		};
 		weapons[]=
 		{
-			"SSV_Weapon_Android_MSBS",
+			"SSV_Weapon_Android_MX",
 			"Throw",
 			"Put",
 			"Binocular"
 		};
 		respawnWeapons[]=
 		{
-			"SSV_Weapon_Android_MSBS",
+			"SSV_Weapon_Android_MX",
 			"Throw",
 			"Put",
 			"Binocular"
 		};
 		magazines[]=
 		{
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_black_mag",
+			"30Rnd_65x39_caseless_black_mag",
+			"30Rnd_65x39_caseless_black_mag",
+			"30Rnd_65x39_caseless_black_mag",
+			"30Rnd_65x39_caseless_black_mag",
+			"30Rnd_65x39_caseless_black_mag",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -651,12 +936,12 @@
 		};
 		respawnMagazines[]=
 		{
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
+			"30Rnd_65x39_caseless_black_mag",
+			"30Rnd_65x39_caseless_black_mag",
+			"30Rnd_65x39_caseless_black_mag",
+			"30Rnd_65x39_caseless_black_mag",
+			"30Rnd_65x39_caseless_black_mag",
+			"30Rnd_65x39_caseless_black_mag",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -682,277 +967,3 @@
 	class EHS_Unit_Android_Military 		: SSV_Unit_Android_Military {scope=1; scopeCurator=1};
 	class EHS_Unit_Android_Military_Medic 	: SSV_Unit_Android_Military_Medic {scope=1; scopeCurator=1};
 	class EHS_Unit_Android_Military_SL 		: SSV_Unit_Android_Military_SL {scope=1; scopeCurator=1};
-
-	class SSV_Unit_Android_Military_Ruined: SSV_Unit_Android_Military
-	{
-		_generalMacro="SSV_Unit_Android_Military_Ruined";
-		displayName="Replika Police";
-		uniformClass="SSV_Uniform_Android_Military_Ruined";
-		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Military_Ruined.jpg";
-		faction = "SSV_Aux_Replikas";
-		side = 0;
-		nakeduniform="U_hal_synth_red_base";
-		optic = "optic_holosight_blk_f";
-		muzzle = "muzzle_snds_65_ti_blk_f";
-		identityTypes[]=
-		{
-			"LanguageENGVR_F",
-			"SSV_replika_head_1",
-			"NoGlasses"
-		};
-		linkedItems[]=
-		{
-			"SSV_Helmet_Android_Military_Ruined",
-			"SSV_Vest_Android_Military_Ruined",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		respawnLinkedItems[]=
-		{
-			"SSV_Helmet_Android_Military_Ruined",
-			"SSV_Vest_Android_Military_Ruined",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		weapons[]=
-		{
-			"SSV_Weapon_Android_ARX_Ruined",
-			"Throw",
-			"Put",
-			"Binocular"
-		};
-		respawnWeapons[]=
-		{
-			"SSV_Weapon_Android_ARX_Ruined",
-			"Throw",
-			"Put",
-			"Binocular"
-		};
-		magazines[]=
-		{
-			"30Rnd_65x39_caseless_green",
-			"30Rnd_65x39_caseless_green",
-			"30Rnd_65x39_caseless_green",
-			"30Rnd_65x39_caseless_green",
-			"30Rnd_65x39_caseless_green",
-			"30Rnd_65x39_caseless_green",
-			"10Rnd_50BW_Mag_F",
-			"10Rnd_50BW_Mag_F",
-			"HandGrenade",
-			"HandGrenade",
-			"SmokeShell",
-			"SmokeShellGreen",
-			"Chemlight_green",
-			"Chemlight_green"
-		};
-		respawnMagazines[]=
-		{
-			"30Rnd_65x39_caseless_green",
-			"30Rnd_65x39_caseless_green",
-			"30Rnd_65x39_caseless_green",
-			"30Rnd_65x39_caseless_green",
-			"30Rnd_65x39_caseless_green",
-			"30Rnd_65x39_caseless_green",
-			"10Rnd_50BW_Mag_F",
-			"10Rnd_50BW_Mag_F",
-			"HandGrenade",
-			"HandGrenade",
-			"SmokeShell",
-			"SmokeShellGreen",
-			"Chemlight_green",
-			"Chemlight_green"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"SSV_Android\textures\military\ruined\military_uniform_co.paa"
-		};
-        hiddenSelectionsMaterials[] =
-        {
-            "SSV_Android\textures\military\ruined\military_uniform.rvmat"
-        };
-	};
-	class SSV_Unit_Android_Military_Medic_Ruined: SSV_Unit_Android_Military_Medic
-	{
-		_generalMacro="SSV_Unit_Android_Military_Medic_Ruined";
-		displayName="Replika Police Medic";
-		uniformClass="SSV_Uniform_Android_Military_Ruined";
-		faction = "SSV_Aux_Replikas";
-		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Military_Medic_Ruined.jpg";
-		side = 0;
-		nakeduniform="U_hal_synth_red_base";
-		optic = "optic_holosight_blk_f";
-		muzzle = "muzzle_snds_65_ti_blk_f";
-		identityTypes[]=
-		{
-			"LanguageENGVR_F",
-			"SSV_replika_head_1",
-			"NoGlasses"
-		};
-		linkedItems[]=
-		{
-			"SSV_Helmet_Android_Pilot_Ruined",
-			"SSV_Vest_Android_Military_Ruined",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		respawnLinkedItems[]=
-		{
-			"SSV_Helmet_Android_Pilot_Ruined",
-			"SSV_Vest_Android_Military_Ruined",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		weapons[]=
-		{
-			"SSV_Weapon_Android_MSBS_Ruined",
-			"Throw",
-			"Put",
-			"Binocular"
-		};
-		respawnWeapons[]=
-		{
-			"SSV_Weapon_Android_MSBS_Ruined",
-			"Throw",
-			"Put",
-			"Binocular"
-		};
-		magazines[]=
-		{
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"HandGrenade",
-			"HandGrenade",
-			"SmokeShell",
-			"SmokeShellGreen",
-			"Chemlight_green",
-			"Chemlight_green"
-		};
-		respawnMagazines[]=
-		{
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"HandGrenade",
-			"HandGrenade",
-			"SmokeShell",
-			"SmokeShellGreen",
-			"Chemlight_green",
-			"Chemlight_green"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"SSV_Android\textures\military\ruined\military_uniform_co.paa"
-		};
-        hiddenSelectionsMaterials[] =
-        {
-            "SSV_Android\textures\military\ruined\military_uniform.rvmat"
-        };
-	};
-	class SSV_Unit_Android_Military_SL_Ruined: SSV_Unit_Android_Military
-	{
-		_generalMacro="SSV_Unit_Android_Military_SL_Ruined";
-		displayName="Replika Police Sergeant";
-		uniformClass="SSV_Uniform_Android_Military_Ruined";
-		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Military_SL_Ruined.jpg";
-		faction = "SSV_Aux_Replikas";
-		side = 0;
-		nakeduniform="U_hal_synth_red_base";
-		optic = "optic_dms";
-		muzzle = "muzzle_snds_65_ti_blk_f";
-		identityTypes[]=
-		{
-			"LanguageENGVR_F",
-			"SSV_replika_head_2",
-			"NoGlasses"
-		};
-		linkedItems[]=
-		{
-			"SSV_Helmet_Android_Miner_Ruined",
-			"SSV_Vest_Android_Military_Ruined",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		respawnLinkedItems[]=
-		{
-			"SSV_Helmet_Android_Miner_Ruined",
-			"SSV_Vest_Android_Military_Ruined",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		weapons[]=
-		{
-			"SSV_Weapon_Android_MSBS_Ruined",
-			"Throw",
-			"Put",
-			"Binocular"
-		};
-		respawnWeapons[]=
-		{
-			"SSV_Weapon_Android_MSBS_Ruined",
-			"Throw",
-			"Put",
-			"Binocular"
-		};
-		magazines[]=
-		{
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"HandGrenade",
-			"HandGrenade",
-			"SmokeShell",
-			"SmokeShellGreen",
-			"Chemlight_green",
-			"Chemlight_green"
-		};
-		respawnMagazines[]=
-		{
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_65x39_caseless_msbs_mag",
-			"HandGrenade",
-			"HandGrenade",
-			"SmokeShell",
-			"SmokeShellGreen",
-			"Chemlight_green",
-			"Chemlight_green"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"SSV_Android\textures\military\ruined\military_uniform_co.paa"
-		};
-        hiddenSelectionsMaterials[] =
-        {
-            "SSV_Android\textures\military\ruined\military_uniform.rvmat"
-        };
-	};
-
-	class EHS_Unit_Android_Pilot_Ruined 			: SSV_Unit_Android_Pilot_Ruined {scope=1; scopeCurator=1};
-	class EHS_Unit_Android_Military_Ruined 			: SSV_Unit_Android_Military_Ruined {scope=1; scopeCurator=1};
-	class EHS_Unit_Android_Military_Medic_Ruined 	: SSV_Unit_Android_Military_Medic_Ruined {scope=1; scopeCurator=1};
-	class EHS_Unit_Android_Military_SL_Ruined 		: SSV_Unit_Android_Military_SL_Ruined {scope=1; scopeCurator=1};

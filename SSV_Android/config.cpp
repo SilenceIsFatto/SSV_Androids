@@ -11,7 +11,18 @@ class CfgPatches
 			"SSV_Unit_Android_Military_SL",
 			"SSV_Unit_Android_Military_Ruined",
 			"SSV_Unit_Android_Military_Medic_Ruined",
+<<<<<<< Updated upstream
 			"SSV_Unit_Android_Military_SL_Ruined"
+=======
+			"SSV_Unit_Android_Military_SL_Ruined",
+			
+			"SSV_Unit_Android_Army_SL",
+			"SSV_Unit_Android_Army_Medic",
+			"SSV_Unit_Android_Army",
+
+			"SSV_Unit_Android_Assassin",
+			"SSV_Unit_Android_Assassin_Stealth"
+>>>>>>> Stashed changes
 		}; // ruined = replika
 		weapons[] =
 		{
@@ -173,6 +184,7 @@ class cfgWeapons
 class cfgVehicles
 {
 	#include "cfgUnits.hpp"
+	#include "cfgUnitsEast.hpp"
 };
 
 class cfgGroups

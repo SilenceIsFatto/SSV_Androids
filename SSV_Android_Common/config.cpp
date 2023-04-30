@@ -18,6 +18,30 @@ class CfgPatches
 	};
 };
 
+class CfgEditorSubcategories
+{
+	class SSV_EditorSubcategory_Police
+	{
+		displayName = "Police";
+	};
+	class SSV_EditorSubcategory_Army
+	{
+		displayName = "Military";
+	};
+	class SSV_EditorSubcategory_Workers
+	{
+		displayName = "Workers";
+	};
+	class SSV_EditorSubcategory_Corrupted
+	{
+		displayName = "Shells";
+	};
+	class SSV_EditorSubcategory_Corrupted_Special
+	{
+		displayName = "Compromised Shells";
+	};
+};
+
 class cfgWeapons
 {
 	class H_HelmetB;

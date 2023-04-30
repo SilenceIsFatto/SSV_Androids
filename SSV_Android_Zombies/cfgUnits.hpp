@@ -16,6 +16,7 @@
 		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Pilot.jpg";
 		uniformClass="SSV_Uniform_Android_Military_Ruined";
 		backpack = "";
+		editorSubcategory = "SSV_EditorSubcategory_Corrupted";
 
 		identity = "SSV_replika_identity_1";
 
@@ -174,9 +175,14 @@
 		faction = "SSV_Aux_Corrupted";
 		displayName="Corrupted Dasher";
 		model = "\A3\Characters_F\Common\coveralls.p3d";
+<<<<<<< Updated upstream
 		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Pilot_Ruined.jpg";
+=======
+		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Redacted.jpg";
+>>>>>>> Stashed changes
 		uniformClass="SSV_Uniform_Android_Pilot";
 		nakeduniform="U_hal_synth_red_base";
+		editorSubcategory = "SSV_EditorSubcategory_Corrupted_Special";
 
 		identity = "SSV_replika_identity_1";
 
@@ -229,9 +235,14 @@
 		faction = "SSV_Aux_Corrupted";
 		displayName="Corrupted Siren";
 		model = "\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
+<<<<<<< Updated upstream
 		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Pilot.jpg";
+=======
+		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Redacted.jpg";
+>>>>>>> Stashed changes
 		uniformClass="SSV_Uniform_Android_Military_Ruined";
 		nakeduniform="U_hal_synth_red_base";
+		editorSubcategory = "SSV_EditorSubcategory_Corrupted_Special";
 
 		identity = "SSV_replika_identity_1";
 
