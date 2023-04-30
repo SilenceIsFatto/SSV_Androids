@@ -66,7 +66,7 @@ class cfgVehicles
 	{
 		destrType = "DestructNo";
 		editorCategory = "SSV_Props";
-		VehicleClass="SSV_Props_Storage";
+		vehicleClass="SSV_Props_Storage";
 	};
 
 	class I_supplyCrate_F;
@@ -75,7 +75,7 @@ class cfgVehicles
 		scope = 0;
 		destrType = "DestructNo";
 		editorCategory = "SSV_Props";
-		VehicleClass="SSV_Props_Storage";
+		vehicleClass="SSV_Props_Storage";
 		class TransportBackpacks {};
 		class TransportItems {};
 		class TransportMagazines {};
@@ -118,7 +118,7 @@ class cfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		editorCategory = "SSV_Props";
-		VehicleClass="SSV_Props_Storage";
+		vehicleClass="SSV_Props_Storage";
 		model = "SSV_Android_Props\data_pad";
 		displayName = "Data Pad";
 	};

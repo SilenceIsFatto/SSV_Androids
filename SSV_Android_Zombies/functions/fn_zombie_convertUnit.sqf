@@ -13,17 +13,21 @@
 *    4 - Runner (Calm)
 *    5 - Runner (Angry)
 *    6 - Triggerman
+*    7 - Corrupted Body
+*    8 - Melee
 */
 
-params ["_unit"];
+params ["_unit", ["_type", 0]];
 
 if (is3DEN) exitWith {};
 
 private _loadout = getUnitLoadout _unit;
 
-private _type = [(configFile >> "cfgVehicles" >> typeOf _unit), "zombieType", 0] call BIS_fnc_returnConfigEntry;
+if (_type isEqualTo 0) then { // check if type wasn't provided through params
+    _type = [(configFile >> "cfgVehicles" >> typeOf _unit), "zombieType", 0] call BIS_fnc_returnConfigEntry; // take type from config instead
+};
 
-if (_type isEqualTo 0) exitWith {};
+if (_type isEqualTo 0) exitWith {}; // if type is still undefined, abort
 
 [_unit, _type] call WBK_LoadAIThroughEden;
 
