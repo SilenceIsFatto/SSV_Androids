@@ -16,6 +16,9 @@ class CfgPatches
 			"SSV_Unit_Android_Army_SL",
 			"SSV_Unit_Android_Army_Medic",
 			"SSV_Unit_Android_Army",
+
+			"SSV_Unit_Android_Assassin",
+			"SSV_Unit_Android_Assassin_Stealth"
 		}; // ruined = replika
 		weapons[] =
 		{
@@ -69,6 +72,7 @@ class cfgGlasses
 class cfgVehicles
 {
 	#include "cfgUnits.hpp"
+	#include "cfgUnitsEast.hpp"
 };
 
 class cfgGroups

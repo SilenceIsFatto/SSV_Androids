@@ -13,9 +13,10 @@
 		scope=2;
 		displayName="Corrupted Leader";
 		model = "\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
-		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Corrupted_SL.jpg";
+		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Redacted.jpg";
 		uniformClass="SSV_Uniform_Android_Military_Ruined";
 		backpack = "";
+		editorSubcategory = "SSV_EditorSubcategory_Corrupted";
 
 		identity = "SSV_replika_identity_1";
 
@@ -84,7 +85,7 @@
 	class SSV_Unit_Android_Corrupted: SSV_Unit_Android_Corrupted_SL
 	{
 		displayName="Corrupted Grunt";
-		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Corrupted.jpg";
+		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Redacted.jpg";
 
 		identity = "SSV_replika_identity_1";
 
@@ -224,9 +225,10 @@
 		faction = "SSV_Aux_Corrupted";
 		displayName="Corrupted Dasher";
 		model = "\A3\Characters_F\Common\coveralls.p3d";
-		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Corrupted.jpg";
+		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Redacted.jpg";
 		uniformClass="SSV_Uniform_Android_Pilot";
 		nakeduniform="U_hal_synth_red_base";
+		editorSubcategory = "SSV_EditorSubcategory_Corrupted_Special";
 
 		identity = "SSV_replika_identity_1";
 
@@ -279,9 +281,10 @@
 		faction = "SSV_Aux_Corrupted";
 		displayName="Corrupted Siren";
 		model = "\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
-		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Android_Corrupted.jpg";
+		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Redacted.jpg";
 		uniformClass="SSV_Uniform_Android_Military_Ruined";
 		nakeduniform="U_hal_synth_red_base";
+		editorSubcategory = "SSV_EditorSubcategory_Corrupted_Special";
 
 		identity = "SSV_replika_identity_1";
 
