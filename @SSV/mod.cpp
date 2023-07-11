@@ -1,9 +1,9 @@
- name 			= "SSV - Android Ascension"; // Name of your mod
- author 		= "SSV Dev Team"; // Affects Arma 3 Launcher, when the mod are loaded as local
+ name 			= "Android Ascension"; // Name of your mod
+ author 		= "Crow Studios"; // Affects Arma 3 Launcher, when the mod are loaded as local
  logo 			= "\SSV_Common\SSV_logo_big_co.paa"; // Logo displayed in the main menu
  logoOver 	    = "\SSV_Common\SSV_logo_big_co.paa"; // When the mouse is over, in the main menu
- tooltip 		= "SSV Androids";
- tooltipOwned   = "SSV"; // Tool tip displayed when the mouse is left over, in the main menu
+ tooltip 		= "Android Ascension";
+ tooltipOwned   = "Crow Studios"; // Tool tip displayed when the mouse is left over, in the main menu
  picture 		= "\SSV_Common\SSV_logo_co.paa"; // Picture displayed from the expansions menu. Optimal size is 2048x1024
  actionName     = "Discord Link";
  action 		= ""; // Website URL, that can be accessed from the expansions menu

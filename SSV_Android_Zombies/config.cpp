@@ -18,8 +18,8 @@ class CfgPatches
 		magazines[] = {""};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"SSV_Android"};
-		name = "SSV - Android Zombies";
-		author = "SSV";
+		name = "Android Zombies";
+		author = "Crow Studios";
 	};
 };
 
