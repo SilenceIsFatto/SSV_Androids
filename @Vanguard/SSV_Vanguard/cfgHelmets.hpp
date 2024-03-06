@@ -1,3 +1,14 @@
+	class SSV_Helmet_Android_Pilot;
+	
+	class SSV_Helmet_Vanguard_Pilot_Expeditionary : SSV_Helmet_Android_Pilot
+	{
+		displayName = "Expeditionary Helmet";
+		picture="\SSV_Vanguard_Common\SSV_logo_co.paa";
+
+		hiddenSelectionsTextures[] = {"SSV_Vanguard\textures\pilot\helldiver\pilot_co.paa", "SSV_Vanguard\textures\pilot\helldiver\pilot_co.paa"};
+		hiddenSelectionsMaterials[] = {"SSV_Vanguard\textures\pilot\helldiver\pilot.rvmat", "SSV_Vanguard\textures\pilot\helldiver\pilot.rvmat"};
+	};
+
 	class SSV_Helmet_Vanguard_Worker : SSV_Helmet_Base
 	{
 		displayName = "Vanguard Helmet (Worker)";
@@ -58,6 +69,22 @@
 		};
 	};
 
+	class SSV_Helmet_Vanguard_QRF_Expeditionary : SSV_Helmet_Vanguard_QRF
+	{
+		displayName = "Expeditionary Helmet (QRF)";
+
+		hiddenSelectionsTextures[] = {"SSV_Vanguard\textures\qrf\helldiver\qrf_visor_co.paa", "SSV_Vanguard\textures\qrf\helldiver\qrf_helmet_co.paa"};
+		hiddenSelectionsMaterials[] = {"SSV_Vanguard\textures\qrf\helldiver\qrf_visor.rvmat", "SSV_Vanguard\textures\qrf\helldiver\qrf_helmet.rvmat"};
+
+		class ItemInfo : HeadgearItem
+		{
+			mass = 50;
+			hiddenSelections[] = {"qrf_visor", "qrf_helmet"};
+			uniformModel = "SSV_Vanguard\qrf.p3d";
+			modelSides[] = {3, 2, 1, 0};
+		};
+	};
+
 	class SSV_Helmet_Vanguard_Drone : SSV_Helmet_Base
 	{
 		displayName = "Vanguard Helmet (Drone)";
@@ -69,6 +96,24 @@
 		hiddenSelectionsTextures[] = {"SSV_Vanguard\textures\drone\drone_ca.paa", "SSV_Vanguard\textures\drone\drone_glass_ca.paa"};
 		//"SSV_Vanguard\textures\drone\drone_glass_ca.paa"
 		hiddenSelectionsMaterials[] = {"SSV_Vanguard\textures\drone\drone.rvmat", "SSV_Vanguard\textures\drone\drone_glass.rvmat"};
+		//"SSV_Vanguard\textures\drone\drone_glass.rvmat"
+
+		class ItemInfo : HeadgearItem
+		{
+			mass = 50;
+			hiddenSelections[] = {"drone", "drone_glass"};
+			uniformModel = "SSV_Vanguard\drone.p3d";
+			modelSides[] = {3, 2, 1, 0};
+		};
+	};
+
+	class SSV_Helmet_Vanguard_Drone_Expeditionary : SSV_Helmet_Vanguard_Drone
+	{
+		displayName = "Expeditionary Helmet (Drone)";
+
+		hiddenSelectionsTextures[] = {"SSV_Vanguard\textures\drone\helldiver\drone_ca.paa", "SSV_Vanguard\textures\drone\drone_glass_ca.paa"};
+		//"SSV_Vanguard\textures\drone\drone_glass_ca.paa"
+		hiddenSelectionsMaterials[] = {"SSV_Vanguard\textures\drone\helldiver\drone.rvmat", "SSV_Vanguard\textures\drone\drone_glass.rvmat"};
 		//"SSV_Vanguard\textures\drone\drone_glass.rvmat"
 
 		class ItemInfo : HeadgearItem

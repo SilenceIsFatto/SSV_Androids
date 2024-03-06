@@ -24,7 +24,7 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {"SSV_Android_Weapons"};
 		name = "Vanguard Weapons";
-		author = "Crow Studios";
+		author = "Silence";
 	};
 };
 

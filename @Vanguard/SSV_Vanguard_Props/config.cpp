@@ -14,7 +14,7 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {"SSV_Android_Props"};
 		name = "Vanguard Props";
-		author = "Crow Studios";
+		author = "Silence";
 	};
 };
 
@@ -62,5 +62,16 @@ class cfgVehicles
 		hiddenSelectionsTextures[] = {"SSV_Vanguard_Props\textures\wall_2\wall_2_co.paa"};
 		hiddenSelectionsMaterials[] = {"SSV_Vanguard_Props\textures\wall_2\wall_2.rvmat"};
 		displayName = "Half Fortification 2";
+	};
+	class SSV_Prop_Mineral_Box : SSV_Prop_Base
+	{
+		scope = 2;
+		scopeCurator = 2;
+		vehicleClass = "SSV_Props_Storage_Vanguard";
+		model = "SSV_Vanguard_Props\mineral_box";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"SSV_Vanguard_Props\textures\mineral_box\mineral_box_co.paa"};
+		hiddenSelectionsMaterials[] = {"SSV_Vanguard_Props\textures\mineral_box\mineral_box.rvmat"};
+		displayName = "Mineral Transport Box";
 	};
 };

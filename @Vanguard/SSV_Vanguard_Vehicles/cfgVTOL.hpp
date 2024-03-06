@@ -9,10 +9,10 @@
 	
 		faction = "SSV_Aux_Vanguard";
 		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Redacted.jpg";
-		crew="SSV_Unit_Vanguard_Worker";
+		crew=CREW;
 		typicalCargo[]=
 		{
-			"SSV_Unit_Vanguard_Military"
+			TYPICAL_CREW
 		};
 	};
 
@@ -24,10 +24,10 @@
 	
 		faction = "SSV_Aux_Vanguard";
 		editorPreview = "\SSV_Android\previews\units\SSV_Unit_Redacted.jpg";
-		crew="SSV_Unit_Vanguard_Worker";
+		crew=CREW;
 		typicalCargo[]=
 		{
-			"SSV_Unit_Vanguard_J13"
+			TYPICAL_CREW
 		};
 	};
 

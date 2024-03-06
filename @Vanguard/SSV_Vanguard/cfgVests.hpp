@@ -19,6 +19,12 @@
 		picture="\SSV_Vanguard_Common\SSV_logo_co.paa";
 		icon = "\SSV_Common\SSV_logo_co.paa";
 	};
+    class SSV_Vest_Vanguard_SMG_Expeditionary : SSV_Vest_Vanguard_SMG
+	{
+		displayName = "Expeditionary Heavy Assault Vest";
+		hiddenSelectionsTextures[] = {"SSV_Vanguard\textures\j13\helldiver\vest_smg_co.paa"};
+		// hiddenSelectionsMaterials[] = {"SSV_Vanguard\textures\j13\helldiver\vest_smg.rvmat"};
+	};
     class SSV_Vest_Vanguard_Stealth : JMSJEFF_FarmorAdvisor_armor_black
 	{
 		author = "SSV";
@@ -50,6 +56,11 @@
 		hiddenSelectionsTextures[] = {"SSV_Vanguard\textures\j13\vest_troop_1_co.paa", "SSV_Vanguard\textures\j13\vest_troop_2_co.paa"};
 		picture="\SSV_Vanguard_Common\SSV_logo_co.paa";
 		icon = "\SSV_Common\SSV_logo_co.paa";
+	};
+    class SSV_Vest_Vanguard_QRF_Expeditionary : SSV_Vest_Vanguard_QRF
+	{
+		displayName = "Expeditionary Medium Assault Vest";
+		hiddenSelectionsTextures[] = {"SSV_Vanguard\textures\j13\helldiver\vest_troop_1_co.paa", "SSV_Vanguard\textures\j13\vest_troop_2_co.paa"};
 	};
     class SSV_Vest_Vanguard_QRF_Marksman : JMSJEFF_ChestVestMark_armor_black
 	{

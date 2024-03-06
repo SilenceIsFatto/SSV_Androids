@@ -385,15 +385,48 @@
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"SSV_Vanguard\textures\qrf\qrf_uniform_co.paa"
+			"SSV_Vanguard\textures\stealth\stealth_uniform_co.paa"
 		};
         hiddenSelectionsMaterials[] =
         {
-            "SSV_Vanguard\textures\qrf\qrf_uniform.rvmat"
+            "SSV_Vanguard\textures\stealth\stealth_uniform.rvmat"
         };
 		hideProxySelections[]=
 		{
 			"arms_hide"
+		};
+	};
+	class SSV_Unit_Vanguard_QRF_Medic: SSV_Unit_Vanguard_QRF
+	{
+		_generalMacro="SSV_Unit_Vanguard_QRF_Medic";
+		displayName = "Vanguard QRF Medic";
+		optic = "";
+		muzzle = "";
+		laser = "";
+		bipod = "";
+		backpack = "B_ViperHarness_blk_F";
+		picture="pictureHeal";
+		icon="iconManMedic";
+		role="CombatLifeSaver";
+		linkedItems[]=
+		{
+			"JMSJEFF_Mariner_F_black_helmet",
+			"SSV_Mask_Vanguard_Bushi",
+			"SSV_Vest_Vanguard_J13_SL",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"JMSJEFF_Mariner_F_black_helmet",
+			"SSV_Mask_Vanguard_Bushi",
+			"SSV_Vest_Vanguard_J13_SL",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
 		};
 	};
 
@@ -629,4 +662,82 @@
         {
             "SSV_Vanguard\textures\soldier\soldier_uniform.rvmat"
         };
+	};
+
+	class SSV_Unit_Vanguard_Engineer: SSV_Unit_Vanguard_Soldier
+	{
+		_generalMacro="SSV_Unit_Vanguard_Engineer";
+		displayName="Vanguard Engineer";
+		optic = "optic_MRCO";
+		muzzle = "";
+		laser = "";
+		bipod = "";
+		picture="pictureRepair";
+		icon="iconManEngineer";
+		role="Sapper";
+		backpack = "B_Carryall_blk";
+		linkedItems[]=
+		{
+			"SSV_Helmet_Vanguard_Miner",
+			"SSV_Vest_Vanguard_SMG",
+			"G_Balaclava_blk",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"SSV_Helmet_Vanguard_Miner",
+			"SSV_Vest_Vanguard_SMG",
+			"G_Balaclava_blk",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		weapons[]=
+		{
+			"SSV_Weapon_Vanguard_Pilum",
+			"Throw",
+			"Put",
+			"Binocular"
+		};
+		respawnWeapons[]=
+		{
+			"SSV_Weapon_Vanguard_Pilum",
+			"Throw",
+			"Put",
+			"Binocular"
+		};
+		magazines[]=
+		{
+			"WRS_Sniper_Magazine_AP",
+			"WRS_Sniper_Magazine_AP",
+			"WRS_Sniper_Magazine_AP",
+			"WRS_Sniper_Magazine",
+			"WRS_Sniper_Magazine",
+			"WRS_Sniper_Magazine",
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green"
+		};
+		respawnMagazines[]=
+		{
+			"WRS_Sniper_Magazine_AP",
+			"WRS_Sniper_Magazine_AP",
+			"WRS_Sniper_Magazine_AP",
+			"WRS_Sniper_Magazine",
+			"WRS_Sniper_Magazine",
+			"WRS_Sniper_Magazine",
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green"
+		};
 	};

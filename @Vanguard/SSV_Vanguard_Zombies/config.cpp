@@ -13,13 +13,13 @@ class CfgPatches
 		};
 		magazines[] = {""};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"SSV_Android_Zombies"};
+		requiredAddons[] = {"SSV_Android_Zombies", "WBK_ZombieCreatures"};
 		name = "Vanguard Zombies";
-		author = "Crow Studios";
+		author = "Silence";
+		skipWhenMissingDependencies = 1;
 	};
 };
 
-#if __has_include("\WBK_Zombies\config.bin")
 class cfgVehicles
 {
 	#include "cfgUnits.hpp"
@@ -35,4 +35,3 @@ class Extended_Init_EventHandlers
 		};
 	};
 };
-#endif

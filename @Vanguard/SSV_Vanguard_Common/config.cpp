@@ -14,6 +14,6 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {"SSV_Android_Common"};
 		name = "Vanguard Common";
-		author = "Crow Studios";
+		author = "Silence";
 	};
 };

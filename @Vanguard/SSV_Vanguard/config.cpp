@@ -8,8 +8,11 @@ class CfgPatches
 			"SSV_Unit_Vanguard_J13_Technician",
 			"SSV_Unit_Vanguard_Stealth",
 			"SSV_Unit_Vanguard_QRF",
+			"SSV_Unit_Vanguard_QRF_Medic",
 			"SSV_Unit_Vanguard_Worker",
-			"SSV_Unit_Vanguard_Drone"
+			"SSV_Unit_Vanguard_Soldier",
+			"SSV_Unit_Vanguard_Drone",
+			"SSV_Unit_Vanguard_Engineer"
 		}; // ruined = replika
 		weapons[] =
 		{
@@ -19,7 +22,7 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {"SSV_Android"};
 		name = "Vanguard";
-		author = "Crow Studios";
+		author = "Silence";
 	};
 };
 
@@ -33,6 +36,17 @@ class CfgFactionClasses
 		priority = 19;
 		side = 2; // GREENFOR
 	};
+	class SSV_Aux_Vanguard_SpecOps : SSV_Aux_Vanguard
+	{
+		displayName = "Vanguard Special Ops";
+		priority = 20;
+		side = 2; // GREENFOR
+	};
+};
+
+class cfgGroups
+{
+	#include "cfgGroups_Indep.hpp"
 };
 
 class cfgWeapons

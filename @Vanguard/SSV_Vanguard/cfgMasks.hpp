@@ -11,6 +11,13 @@
 		hiddenSelectionsMaterials[] = {"ssv_vanguard\textures\bushi\bushi.rvmat"};
 	};
 	
+	class SSV_Mask_Vanguard_Bushi_Expeditionary: SSV_Mask_Vanguard_Bushi
+	{
+		displayname = "Expeditionary Mask (Bushi)";
+		hiddenSelectionsTextures[] = {"ssv_vanguard\textures\bushi\helldiver\bushi_co.paa"};
+		hiddenSelectionsMaterials[] = {"ssv_vanguard\textures\bushi\helldiver\bushi.rvmat"};
+	};
+	
 	class SSV_Mask_Vanguard_Shogun: SSV_Mask_Base
 	{
 		displayname = "Vanguard Mask (Shogun)";
@@ -20,4 +27,11 @@
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"ssv_vanguard\textures\shogun\mask_co.paa"};
 		hiddenSelectionsMaterials[] = {"ssv_vanguard\textures\shogun\mask.rvmat"};
+	};
+
+	class SSV_Mask_Vanguard_Shogun_Expeditionary: SSV_Mask_Vanguard_Shogun
+	{
+		displayname = "Expeditionary Mask (Shogun)";
+		hiddenSelectionsTextures[] = {"ssv_vanguard\textures\shogun\helldiver\mask_co.paa"};
+		hiddenSelectionsMaterials[] = {"ssv_vanguard\textures\shogun\helldiver\mask.rvmat"};
 	};
