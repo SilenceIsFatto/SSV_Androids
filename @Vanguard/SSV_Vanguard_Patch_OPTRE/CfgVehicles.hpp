@@ -446,16 +446,16 @@
         hiddenSelectionsTextures[] = {"OPTRE_Vehicles_Tracked\Elephant\Data\camo\blk\consoles_co.paa","OPTRE_Vehicles_Tracked\Elephant\Data\camo\blk\exterior_details_co.paa","OPTRE_Vehicles_Tracked\Elephant\Data\camo\blk\flooring_co.paa","OPTRE_Vehicles_Tracked\Elephant\Data\camo\blk\hull_co.paa","OPTRE_Vehicles_Tracked\Elephant\Data\camo\blk\interior_co.paa","OPTRE_Vehicles_Tracked\Elephant\Data\camo\blk\tracks_co.paa","OPTRE_Vehicles_Tracked\Elephant\Data\camo\blk\tracks2_co.paa"};
     };
 
-    class OPTRE_UNSC_falcon;
+    class OPTRE_UNSC_falcon_black;
     class OPTRE_UNSC_falcon_armed;
-    class ssv_vanguard_vehicle_falcon_black : OPTRE_UNSC_falcon
+    class ssv_vanguard_vehicle_falcon_black : OPTRE_UNSC_falcon_black
     {
         displayName = "UH-144 Falcon (Unarmed)";
         faction = "SSV_Aux_Vanguard_SpecOps";
         side=2;
         crew = CREW;
         FACTION_PREVIEW;
-        hiddenSelectionsTextures[] = {"\OPTRE_Vehicles_Air\Falcon\data\Black\Black_Falcon_Main_co.paa","\OPTRE_Vehicles_Air\Falcon\data\Black\Black_Falcon_Attachments_co.paa","\OPTRE_Vehicles_Air\Falcon\data\Black\Black_Falcon_Interior_co.paa"};
+        hiddenSelectionsTextures[] = {"\OPTRE_Vehicles_Air\Falcon\data\Black\Falcon_Main_co.paa","\OPTRE_Vehicles_Air\Falcon\data\Black\Falcon_Attachments_co.paa","\OPTRE_Vehicles_Air\Falcon\data\Falcon_Interior_co.paa"};
     };
     class ssv_vanguard_vehicle_falcon_armed_black : OPTRE_UNSC_falcon_armed
     {
@@ -464,7 +464,7 @@
         side=2;
         crew = CREW;
         FACTION_PREVIEW;
-        hiddenSelectionsTextures[] = {"\OPTRE_Vehicles_Air\Falcon\data\Black\Black_Falcon_Main_co.paa","\OPTRE_Vehicles_Air\Falcon\data\Black\Black_Falcon_Attachments_co.paa","\OPTRE_Vehicles_Air\Falcon\data\Black\Black_Falcon_Interior_co.paa"};
+        hiddenSelectionsTextures[] = {"\OPTRE_Vehicles_Air\Falcon\data\Black\Falcon_Main_co.paa","\OPTRE_Vehicles_Air\Falcon\data\Black\Falcon_Attachments_co.paa","\OPTRE_Vehicles_Air\Falcon\data\Falcon_Interior_co.paa"};
     };
 
     class OPTRE_UNSC_hornet_CAS;
