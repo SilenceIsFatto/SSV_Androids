@@ -153,7 +153,7 @@
         };
 	};
 
-	class SSV_Unit_Android_Army: SSV_Unit_Android_Pilot
+	class SSV_Unit_Android_Army: SSV_Unit_Android_Base
 	{
 		_generalMacro="SSV_Unit_Android_Army";
 		displayName="Android Soldier";
@@ -464,7 +464,7 @@
         };
 	};
 
-	class SSV_Unit_Android_Military: SSV_Unit_Android_Pilot
+	class SSV_Unit_Android_Military: SSV_Unit_Android_Base
 	{
 		_generalMacro="SSV_Unit_Android_Military";
 		displayName="Android Police";
@@ -559,7 +559,7 @@
         };
 	};
 
-	class SSV_Unit_Android_Military_Medic: SSV_Unit_Android_Pilot
+	class SSV_Unit_Android_Military_Medic: SSV_Unit_Android_Base
 	{
 		_generalMacro="SSV_Unit_Android_Military_Medic";
 		displayName="Android Police Medic";
@@ -656,7 +656,7 @@
         };
 	};
 
-	class SSV_Unit_Android_Military_SL: SSV_Unit_Android_Pilot
+	class SSV_Unit_Android_Military_SL: SSV_Unit_Android_Base
 	{
 		_generalMacro="SSV_Unit_Android_Military_SL";
 		displayName="Android Police Sergeant";

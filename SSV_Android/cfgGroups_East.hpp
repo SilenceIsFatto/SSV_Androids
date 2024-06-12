@@ -31,7 +31,8 @@
 					};
 					class Unit2
 					{
-						side=1;
+						
+						
 						vehicle="SSV_Unit_Android_Military_Ruined";
 						rank="PRIVATE";
 						position[]={-5,-5,0};

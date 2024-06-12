@@ -20,18 +20,23 @@ class CfgPatches
 
 class cfgVehicles
 {
-	class B_Soldier_F;
+	class B_Soldier_base_F;
+	class B_Soldier_F : B_Soldier_base_F
+	{
+		class HitPoints;
+	};
 	class SSV_Unit_Android_Base : B_Soldier_F
 	{
-		impactEffectsBlood="ImpactPlastic";
+		impactEffectsBlood = "ImpactMetal";
+		impactEffectsNoBlood = "ImpactPlastic";
 		canBleed=0;
 		camouflage=1;
 		nakeduniform="U_hal_synth_red_base";
 		icon="iconManLeader";
-		faction = "SSV_Aux_Androids";
+		faction="SSV_Aux_Androids";
 		side=1;
 		author="SSV";
-		scope = 1;
+		scope=1;
 		class Wounds
 		{
 			tex[]=
@@ -47,7 +52,35 @@ class cfgVehicles
 		};
 		genericNames="VRMen";
 		oxygenCapacity=200;
-		class HitPoints
+		class SoundBreath
+		{
+			breath[] = {};
+		};
+		class SoundDrown
+		{
+			breath[] = {};
+		};
+		class SoundInjured
+		{
+			breath[] = {};
+		};
+		class SoundBleeding
+		{
+			breath[] = {};
+		};
+		class SoundBurning
+		{
+			breath[] = {};
+		};
+		class SoundChoke
+		{
+			breath[] = {};
+		};
+		class SoundRecovered
+		{
+			breath[] = {};
+		};
+		class HitPoints : HitPoints
 		{
 			class HitFace
 			{
@@ -110,7 +143,7 @@ class cfgVehicles
 				name="spine2";
 				passThrough=0.2;
 				radius=0.18000001;
-				explosionShielding=1.5;
+				explosionShielding=2.4000001;
 				visual="injury_body";
 				minimalHit=0.0099999998;
 			};
@@ -121,7 +154,7 @@ class cfgVehicles
 				name="spine3";
 				passThrough=0.2;
 				radius=0.18000001;
-				explosionShielding=1.5;
+				explosionShielding=2.4000001;
 				visual="injury_body";
 				minimalHit=0.0099999998;
 			};
@@ -132,7 +165,7 @@ class cfgVehicles
 				name="body";
 				passThrough=0.80000001;
 				radius=0;
-				explosionShielding=1.5;
+				explosionShielding=2.4000001;
 				visual="injury_body";
 				minimalHit=0.0099999998;
 				depends="HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
@@ -184,6 +217,42 @@ class cfgVehicles
 				visual="";
 				minimalHit=0;
 				depends="(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
+			};
+			class HitLeftArm: HitHands
+			{
+				material=-1;
+				name="hand_l";
+				radius=0.079999998;
+				visual="injury_hands";
+				minimalHit=0.0099999998;
+			};
+			class HitRightArm: HitLeftArm
+			{
+				name="hand_r";
+			};
+			class HitLeftLeg: HitLegs
+			{
+				material=-1;
+				name="leg_l";
+				radius=0.1;
+				visual="injury_legs";
+				minimalHit=0.0099999998;
+			};
+			class HitRightLeg: HitLeftLeg
+			{
+				name="leg_r";
+			};
+			class ACE_HDBracket
+			{
+				armor=1;
+				material=-1;
+				name="head";
+				passThrough=0;
+				radius=1;
+				explosionShielding=1;
+				visual="";
+				minimalHit=0;
+				depends="HitHead";
 			};
 		};
 	};
