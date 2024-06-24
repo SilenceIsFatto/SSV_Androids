@@ -27,8 +27,8 @@ class CfgPatches
 		magazines[] = {""};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"SSV_Android_Common"};
-		name = "SSV - Androids";
-		author = "SSV";
+		name = "Androids";
+		author = "Crow Studios";
 	};
 };
 

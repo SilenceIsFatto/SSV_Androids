@@ -1,172 +1,5 @@
 	// cfgVehicles
-    class B_Soldier_F;
-
-	class SSV_Unit_Android_Base : B_Soldier_F
-	{
-		impactEffectsBlood="ImpactPlastic";
-		canBleed=0;
-		camouflage=1;
-		nakeduniform="U_hal_synth_red_base";
-		icon="iconManLeader";
-		faction = "SSV_Aux_Androids";
-		side=1;
-		author="SSV";
-		scope = 1;
-		class Wounds
-		{
-			tex[]=
-			{
-				"hal_synths\data\hl_robo_01_co.paa",
-				"hal_synths\data\hl_robo_01_co.paa"
-			};
-			mat[]=
-			{
-				"hal_synths\data\hl_robo_01.rvmat",
-				"hal_synths\data\hl_robo_01_injury.rvmat"
-			};
-		};
-		genericNames="VRMen";
-		oxygenCapacity=200;
-		class HitPoints
-		{
-			class HitFace
-			{
-				armor=6;
-				material=-1;
-				name="face_hub";
-				passThrough=0.2;
-				radius=0.079999998;
-				explosionShielding=0.1;
-				minimalHit=0.0099999998;
-			};
-			class HitNeck: HitFace
-			{
-				armor=6;
-				material=-1;
-				name="neck";
-				passThrough=0.2;
-				radius=0.1;
-				explosionShielding=0.5;
-				minimalHit=0.0099999998;
-			};
-			class HitHead: HitNeck
-			{
-				armor=10;
-				material=-1;
-				name="head";
-				passThrough=0.2;
-				radius=0.2;
-				explosionShielding=0.5;
-				minimalHit=0.0099999998;
-				depends="HitFace max HitNeck";
-			};
-			class HitPelvis: HitHead
-			{
-				armor=12;
-				material=-1;
-				name="pelvis";
-				passThrough=0.2;
-				radius=0.23999999;
-				explosionShielding=1;
-				visual="injury_body";
-				minimalHit=0.0099999998;
-				depends="0";
-			};
-			class HitAbdomen: HitPelvis
-			{
-				armor=12;
-				material=-1;
-				name="spine1";
-				passThrough=0.2;
-				radius=0.16;
-				explosionShielding=1;
-				visual="injury_body";
-				minimalHit=0.0099999998;
-			};
-			class HitDiaphragm: HitAbdomen
-			{
-				armor=12;
-				material=-1;
-				name="spine2";
-				passThrough=0.2;
-				radius=0.18000001;
-				explosionShielding=1.5;
-				visual="injury_body";
-				minimalHit=0.0099999998;
-			};
-			class HitChest: HitDiaphragm
-			{
-				armor=12;
-				material=-1;
-				name="spine3";
-				passThrough=0.2;
-				radius=0.18000001;
-				explosionShielding=1.5;
-				visual="injury_body";
-				minimalHit=0.0099999998;
-			};
-			class HitBody: HitChest
-			{
-				armor=1000;
-				material=-1;
-				name="body";
-				passThrough=0.80000001;
-				radius=0;
-				explosionShielding=1.5;
-				visual="injury_body";
-				minimalHit=0.0099999998;
-				depends="HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
-			};
-			class HitArms: HitBody
-			{
-				armor=6;
-				material=-1;
-				name="arms";
-				passThrough=0.5;
-				radius=0.1;
-				explosionShielding=0.30000001;
-				visual="injury_hands";
-				minimalHit=0.0099999998;
-				depends="0";
-			};
-			class HitHands: HitArms
-			{
-				armor=6;
-				material=-1;
-				name="hands";
-				passThrough=0.5;
-				radius=0.1;
-				explosionShielding=0.30000001;
-				visual="injury_hands";
-				minimalHit=0.0099999998;
-				depends="HitArms";
-			};
-			class HitLegs: HitHands
-			{
-				armor=6;
-				material=-1;
-				name="legs";
-				passThrough=0.5;
-				radius=0.14;
-				explosionShielding=0.30000001;
-				visual="injury_legs";
-				minimalHit=0.0099999998;
-				depends="0";
-			};
-			class Incapacitated: HitLegs
-			{
-				armor=1000;
-				material=-1;
-				name="body";
-				passThrough=1;
-				radius=0;
-				explosionShielding=1;
-				visual="";
-				minimalHit=0;
-				depends="(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
-			};
-		};
-	};
+	class SSV_Unit_Android_Base;
 
 	class SSV_Unit_Android_Pilot: SSV_Unit_Android_Base
 	{
@@ -320,7 +153,7 @@
         };
 	};
 
-	class SSV_Unit_Android_Army: SSV_Unit_Android_Pilot
+	class SSV_Unit_Android_Army: SSV_Unit_Android_Base
 	{
 		_generalMacro="SSV_Unit_Android_Army";
 		displayName="Android Soldier";
@@ -631,7 +464,7 @@
         };
 	};
 
-	class SSV_Unit_Android_Military: SSV_Unit_Android_Pilot
+	class SSV_Unit_Android_Military: SSV_Unit_Android_Base
 	{
 		_generalMacro="SSV_Unit_Android_Military";
 		displayName="Android Police";
@@ -726,7 +559,7 @@
         };
 	};
 
-	class SSV_Unit_Android_Military_Medic: SSV_Unit_Android_Pilot
+	class SSV_Unit_Android_Military_Medic: SSV_Unit_Android_Base
 	{
 		_generalMacro="SSV_Unit_Android_Military_Medic";
 		displayName="Android Police Medic";
@@ -823,7 +656,7 @@
         };
 	};
 
-	class SSV_Unit_Android_Military_SL: SSV_Unit_Android_Pilot
+	class SSV_Unit_Android_Military_SL: SSV_Unit_Android_Base
 	{
 		_generalMacro="SSV_Unit_Android_Military_SL";
 		displayName="Android Police Sergeant";

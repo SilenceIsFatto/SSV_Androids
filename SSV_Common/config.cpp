@@ -13,8 +13,8 @@ class CfgPatches
 		magazines[] = {""};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Data_F_AoW_Loadorder"};
-		name = "SSV - Common";
-		author = "SSV";
+		name = "Common";
+		author = "Crow Studios";
 	};
 };
 

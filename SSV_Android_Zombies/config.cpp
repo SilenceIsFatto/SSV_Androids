@@ -18,8 +18,8 @@ class CfgPatches
 		magazines[] = {""};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"SSV_Android"};
-		name = "SSV - Android Zombies";
-		author = "SSV";
+		name = "Android Zombies";
+		author = "Crow Studios";
 	};
 };
 
@@ -35,7 +35,7 @@ class Extended_Init_EventHandlers
 	{
 		class SSV_Android_Corrupted_Init
 		{
-			init = "[(_this select 0)] call SSV_Android_fnc_zombie_convertUnit";
+			init = "[ (_this select 0), 0, [['SSV_Android_Communication_1', 'SSV_Android_Communication_2'],['SSV_Android_Communication_1', 'SSV_Android_Communication_2'],['SSV_Android_Attack_1', 'SSV_Android_Attack_2'],['SSV_Android_Death_1'],['SSV_Android_Death_1']] ] call SSV_Android_fnc_zombie_convertUnit";
 		};
 	};
 	// class SSV_Unit_Android_Corrupted_Ticker

@@ -13,8 +13,8 @@ class CfgPatches
 		magazines[] = {""};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"SSV_Android"};
-		name = "SSV - Android Functions";
-		author = "SSV";
+		name = "Android Functions";
+		author = "Crow Studios";
 	};
 };
 

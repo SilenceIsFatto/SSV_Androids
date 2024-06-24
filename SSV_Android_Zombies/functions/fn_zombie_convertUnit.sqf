@@ -17,7 +17,7 @@
 *    8 - Melee
 */
 
-params ["_unit", ["_type", 0]];
+params ["_unit", ["_type", 0], ["_sounds", []]];
 
 if (is3DEN) exitWith {};
 
@@ -35,11 +35,15 @@ _unit setUnitLoadout _loadout;
 
 [{[(_this select 0)] call SSV_Android_fnc_android_setIdentity}, [_unit], 0.5] call CBA_fnc_waitAndExecute;
 
-_unit setVariable ["WBK_Zombie_CustomSounds",
-[
-    ["SSV_Android_Communication_1", "SSV_Android_Communication_2"],
-    ["SSV_Android_Communication_1", "SSV_Android_Communication_2"],
-    ["SSV_Android_Attack_1", "SSV_Android_Attack_2"],
-    ["SSV_Android_Death_1"],
-    ["SSV_Android_Death_1"]
-],true];
+if (_sounds isNotEqualTo []) then {
+
+    _unit setVariable ["WBK_Zombie_CustomSounds",
+    [
+        (_sounds select 0),
+        (_sounds select 1),
+        (_sounds select 2),
+        (_sounds select 3),
+        (_sounds select 4)
+    ],true];
+
+};

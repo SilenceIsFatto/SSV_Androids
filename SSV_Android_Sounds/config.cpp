@@ -13,8 +13,8 @@ class CfgPatches
 		magazines[] = {""};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"SSV_Android"};
-		name = "SSV - Android Sounds";
-		author = "SSV";
+		name = "Android Sounds";
+		author = "Crow Studios";
 	};
 };
 
