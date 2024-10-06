@@ -199,6 +199,6 @@
 		scope = 2;
 		picture="\SSV_Vanguard_Common\SSV_logo_co.paa";
 
-		hiddenSelectionsTextures[] = {"SSV_Vanguard\textures\j13\helmet_1_co.paa", "SSV_Vanguard\textures\j13\helmet_2_co.paa"};
+		hiddenSelectionsTextures[] = {"SSV_Vanguard\textures\j13\helmet\helmet_1_co.paa", "SSV_Vanguard\textures\j13\helmet\helmet_2_co.paa"};
 		// hiddenSelectionsMaterials[] = {"SSV_Vanguard\textures\j13\r4.rvmat"};
 	};

@@ -30,7 +30,7 @@
 		weapons[]=
 		{
 			"JMSJEFF_IMRRifle",
-			"WRS_Weapon_Revolver_NoGlow",
+			"SSV_Weapon_Vanguard_Expeditionary_Revolver",
 			"Throw",
 			"Put",
 			"Binocular"
@@ -38,7 +38,7 @@
 		respawnWeapons[]=
 		{
 			"JMSJEFF_IMRRifle",
-			"WRS_Weapon_Revolver_NoGlow",
+			"SSV_Weapon_Vanguard_Expeditionary_Revolver",
 			"Throw",
 			"Put",
 			"Binocular"
@@ -120,7 +120,7 @@
 		weapons[]=
 		{
 			"arifle_MSBS65_black_F",
-			"WRS_Weapon_Revolver_NoGlow",
+			"SSV_Weapon_Vanguard_Expeditionary_Revolver",
 			"Throw",
 			"Put",
 			"Binocular"
@@ -128,7 +128,7 @@
 		respawnWeapons[]=
 		{
 			"arifle_MSBS65_black_F",
-			"WRS_Weapon_Revolver_NoGlow",
+			"SSV_Weapon_Vanguard_Expeditionary_Revolver",
 			"Throw",
 			"Put",
 			"Binocular"
@@ -201,7 +201,7 @@
 		weapons[]=
 		{
 			"OPTRE_M7",
-			"WRS_Weapon_Revolver_NoGlow",
+			"SSV_Weapon_Vanguard_Expeditionary_Revolver",
 			"Throw",
 			"Put",
 			"Binocular"
@@ -209,7 +209,7 @@
 		respawnWeapons[]=
 		{
 			"OPTRE_M7",
-			"WRS_Weapon_Revolver_NoGlow",
+			"SSV_Weapon_Vanguard_Expeditionary_Revolver",
 			"Throw",
 			"Put",
 			"Binocular"
@@ -282,7 +282,7 @@
 		weapons[]=
 		{
 			"OPTRE_M45TAC",
-			"WRS_Weapon_Revolver_NoGlow",
+			"SSV_Weapon_Vanguard_Expeditionary_Revolver",
 			"Throw",
 			"Put",
 			"Binocular"
@@ -290,7 +290,7 @@
 		respawnWeapons[]=
 		{
 			"OPTRE_M45TAC",
-			"WRS_Weapon_Revolver_NoGlow",
+			"SSV_Weapon_Vanguard_Expeditionary_Revolver",
 			"Throw",
 			"Put",
 			"Binocular"

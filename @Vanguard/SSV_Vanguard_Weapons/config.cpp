@@ -8,17 +8,7 @@ class CfgPatches
 		}; 
 		weapons[] =
 		{
-			"SSV_Weapon_Android_Greyhound",
-			"SSV_Weapon_Android_Raptor",
-			"SSV_Weapon_Android_Constrictor",
-			"SSV_Weapon_Android_Bulldog",
-			"SSV_Weapon_Android_Boomslang",
-			"SSV_Weapon_Vanguard_Greyhound",
-			"SSV_Weapon_Vanguard_Constrictor",
-			"SSV_Weapon_Vanguard_Bulldog",
-			"SSV_Weapon_Vanguard_Boomslang",
-			"SSV_Weapon_Vanguard_Pilum",
-			"SSV_Weapon_Vanguard_Rhino"
+			"SSV_Weapon_Vanguard_LMG"
 		}; // ruined = replika
 		magazines[] = {""};
 		requiredVersion = 0.1;

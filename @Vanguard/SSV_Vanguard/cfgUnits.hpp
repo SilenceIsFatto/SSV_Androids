@@ -698,26 +698,26 @@
 		};
 		weapons[]=
 		{
-			"SSV_Weapon_Vanguard_Pilum",
+			"SSV_Weapon_Vanguard_AR",
 			"Throw",
 			"Put",
 			"Binocular"
 		};
 		respawnWeapons[]=
 		{
-			"SSV_Weapon_Vanguard_Pilum",
+			"SSV_Weapon_Vanguard_AR",
 			"Throw",
 			"Put",
 			"Binocular"
 		};
 		magazines[]=
 		{
-			"WRS_Sniper_Magazine_AP",
-			"WRS_Sniper_Magazine_AP",
-			"WRS_Sniper_Magazine_AP",
-			"WRS_Sniper_Magazine",
-			"WRS_Sniper_Magazine",
-			"WRS_Sniper_Magazine",
+			"WRS_Ar_Magazine",
+			"WRS_Ar_Magazine",
+			"WRS_Ar_Magazine",
+			"WRS_Ar_Magazine",
+			"WRS_Ar_Magazine",
+			"WRS_Ar_Magazine",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -727,12 +727,87 @@
 		};
 		respawnMagazines[]=
 		{
-			"WRS_Sniper_Magazine_AP",
-			"WRS_Sniper_Magazine_AP",
-			"WRS_Sniper_Magazine_AP",
-			"WRS_Sniper_Magazine",
-			"WRS_Sniper_Magazine",
-			"WRS_Sniper_Magazine",
+			"WRS_Ar_Magazine",
+			"WRS_Ar_Magazine",
+			"WRS_Ar_Magazine",
+			"WRS_Ar_Magazine",
+			"WRS_Ar_Magazine",
+			"WRS_Ar_Magazine",
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green"
+		};
+	};
+
+	class SSV_Unit_Vanguard_Heavy: SSV_Unit_Vanguard_Soldier
+	{
+		_generalMacro="SSV_Unit_Vanguard_Heavy";
+		displayName="Vanguard Heavy";
+		optic = "optic_MRCO";
+		muzzle = "";
+		laser = "";
+		bipod = "";
+		backpack = "JMSJEFF_d2_backpack";
+		linkedItems[]=
+		{
+			"SSV_Helmet_Vanguard_R2",
+			"SSV_Vest_Vanguard_SMG",
+			"G_Balaclava_blk",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"SSV_Helmet_Vanguard_R2",
+			"SSV_Vest_Vanguard_SMG",
+			"G_Balaclava_blk",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		weapons[]=
+		{
+			"SSV_Weapon_Vanguard_LMG",
+			"Throw",
+			"Put",
+			"Binocular"
+		};
+		respawnWeapons[]=
+		{
+			"SSV_Weapon_Vanguard_LMG",
+			"Throw",
+			"Put",
+			"Binocular"
+		};
+		magazines[]=
+		{
+			"200Rnd_556x45_Box_Tracer_F",
+			"200Rnd_556x45_Box_Tracer_F",
+			"200Rnd_556x45_Box_Tracer_F",
+			"200Rnd_556x45_Box_Tracer_F",
+			"200Rnd_556x45_Box_Tracer_F",
+			"200Rnd_556x45_Box_Tracer_F",
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green"
+		};
+		respawnMagazines[]=
+		{
+			"200Rnd_556x45_Box_Tracer_F",
+			"200Rnd_556x45_Box_Tracer_F",
+			"200Rnd_556x45_Box_Tracer_F",
+			"200Rnd_556x45_Box_Tracer_F",
+			"200Rnd_556x45_Box_Tracer_F",
+			"200Rnd_556x45_Box_Tracer_F",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",

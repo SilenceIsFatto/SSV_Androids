@@ -12,7 +12,8 @@ class CfgPatches
 			"SSV_Unit_Vanguard_Worker",
 			"SSV_Unit_Vanguard_Soldier",
 			"SSV_Unit_Vanguard_Drone",
-			"SSV_Unit_Vanguard_Engineer"
+			"SSV_Unit_Vanguard_Engineer",
+			"SSV_Unit_Vanguard_Heavy"
 		}; // ruined = replika
 		weapons[] =
 		{
